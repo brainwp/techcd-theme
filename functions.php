@@ -26,9 +26,9 @@ if ( ! isset( $content_width ) ) {
 require_once get_template_directory() . '/core/classes/class-bootstrap-nav.php';
 require_once get_template_directory() . '/core/classes/class-shortcodes.php';
 require_once get_template_directory() . '/core/classes/class-thumbnail-resizer.php';
+require_once get_template_directory() . '/core/classes/class-post-type.php';
 // require_once get_template_directory() . '/core/classes/class-theme-options.php';
 // require_once get_template_directory() . '/core/classes/class-options-helper.php';
-// require_once get_template_directory() . '/core/classes/class-post-type.php';
 // require_once get_template_directory() . '/core/classes/class-taxonomy.php';
 // require_once get_template_directory() . '/core/classes/class-metabox.php';
 // require_once get_template_directory() . '/core/classes/abstracts/abstract-front-end-form.php';
@@ -263,3 +263,37 @@ require_once get_template_directory() . '/inc/plugins-support.php';
  * Custom template tags.
  */
 require_once get_template_directory() . '/inc/template-tags.php';
+
+
+/**
+ * CPT Vitrine
+ */
+$vitrine = new Odin_Post_Type(
+    'Vitrine', // Post Type name (singular).
+    'vitrine' // Post Type slug.
+);
+
+$vitrine->set_labels(
+    array(
+        'name'               => _x( 'Vitrine', 'post type general name', 'odin' ),
+		'singular_name'      => _x( 'Produto', 'post type singular name', 'odin' ),
+		'menu_name'          => _x( 'Vitrine', 'admin menu', 'odin' ),
+		'name_admin_bar'     => _x( 'Vitrine', 'add new on admin bar', 'odin' ),
+		'add_new'            => _x( 'Novo produto', 'book', 'odin' ),
+		'add_new_item'       => __( 'Adicionar novo produto', 'odin' ),
+		'new_item'           => __( 'Novo', 'odin' ),
+		'edit_item'          => __( 'Editar', 'odin' ),
+		'view_item'          => __( 'Ver produto', 'odin' ),
+		'all_items'          => __( 'Todos produtos', 'odin' ),
+		'search_items'       => __( 'Procurar', 'odin' ),
+		'parent_item_colon'  => __( 'Produto pai:', 'odin' ),
+		'not_found'          => __( 'Nenhum produto encontrado.', 'odin' ),
+		'not_found_in_trash' => __( 'Nenhum produto encontrado no lixo.', 'odin' )
+    )
+);
+
+$vitrine->set_arguments(
+    array(
+        'menu_icon' => 'dashicons-cart'
+    )
+);
