@@ -32,4 +32,4 @@ src/.ftppass
 src/tmp/*
 assets/js/main.min.js
 odin.zip
-
+sftp-config.json

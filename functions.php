@@ -207,6 +207,8 @@ function odin_enqueue_scripts() {
 	// Main jQuery.
 	wp_enqueue_script( 'odin-main', $template_url . '/assets/js/main.js', array(), null, true );
 
+	wp_enqueue_script( 'jquery-workarounds', $template_url . '/assets/js/jquery-workarounds.js', array(), null, true );
+
 	// Grunt main file with Bootstrap, FitVids and others libs.
 	// wp_enqueue_script( 'odin-main-min', $template_url . '/assets/js/main.min.js', array(), null, true );
 
@@ -263,3 +265,4 @@ require_once get_template_directory() . '/inc/plugins-support.php';
  * Custom template tags.
  */
 require_once get_template_directory() . '/inc/template-tags.php';
+show_admin_bar(false);
