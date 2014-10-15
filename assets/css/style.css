@@ -580,9 +580,14 @@ h4 {font-size:26px;color:#1c1c1c;font-family:HelveticaNeueMdCn, Helvetica, sans-
 }
 /* styles for desktop */
 .tinynav { display: none }
-
+.clear-mob{
+	display:none;
+}
 /* styles for mobile */
 @media screen and (max-width: 600px) {
     .tinynav { display: block }
     #top-menu .main > ul { display: none }
+    .clear-mob{
+    	display:block;
+    }
 }

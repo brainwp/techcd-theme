@@ -41,7 +41,15 @@
 				<div class="col-md-3 pull-left logo">
 					<img src="<?php bloginfo('template_url');?>/assets/images/logo-techcd.png">
 				</div><!-- .col-md-4 pull-left logo -->
-				<nav id="top-menu" class="col-md-7" role="navigation">
+				<div class="col-md-12 clear-mob"></div>
+				<div id="search" class="pull-right busca_top">
+					<form action="#" id="form-search">
+						<fieldset>
+							<input type="text" placeholder="Busca" class="input-text autoclear" /><input type="submit" value="" class="input-submit" />
+						</fieldset>
+					</form>
+				</div><!-- .col-md-2 busca_top -->
+				<nav id="top-menu" class="col-md-7 pull-right" role="navigation">
 					<div class="main">
 						<?php
 						wp_nav_menu(
@@ -57,12 +65,4 @@
 						?>
 					</div><!-- .main -->
 				</nav><!-- #main-menu -->
-				<div class="col-md-12 clear" style="clear:both"></div>
-					<div id="search" class="pull-right busca_top">
-						<form action="#" id="form-search">
-							<fieldset>
-								<input type="text" placeholder="Busca" class="input-text autoclear" /><input type="submit" value="" class="input-submit" />
-							</fieldset>
-						</form>
-					</div><!-- .col-md-2 busca_top -->
 				</header><!-- #header -->
