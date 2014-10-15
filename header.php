@@ -39,7 +39,7 @@
 			</div><!-- .col-md-12 login_top -->
 			<header id="header" role="banner" class="col-md-12">
 				<div class="col-md-3 pull-left logo">
-					<img src="<?php bloginfo('template_url');?>/assets/images/logo.png">
+					<img src="<?php bloginfo('template_url');?>/assets/images/logo-techcd.png">
 				</div><!-- .col-md-4 pull-left logo -->
 				<nav id="top-menu" class="col-md-7" role="navigation">
 					<div class="main">
@@ -57,6 +57,7 @@
 						?>
 					</div><!-- .main -->
 				</nav><!-- #main-menu -->
+				<div class="col-md-12 clear" style="clear:both"></div>
 					<div id="search" class="pull-right busca_top">
 						<form action="#" id="form-search">
 							<fieldset>

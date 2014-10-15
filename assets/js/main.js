@@ -1,5 +1,4 @@
-jQuery(document).ready(function($) {
-	// fitVids.
+jQuery(document).ready(function($) {	// fitVids.
 	$( '.entry-content' ).fitVids();
 
 	// Responsive wp_video_shortcode().
@@ -18,4 +17,9 @@ jQuery(document).ready(function($) {
 	// Tooltip.
 	$( '.odin-tooltip' ).tooltip();
 
+});
+jQuery(document).ready(function($) {
+    $("#top-menu .main > ul").tinyNav({
+    	header: 'Menu', // String: Specify text for "header" and show header instead of the active item
+    });
 });

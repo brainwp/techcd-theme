@@ -204,6 +204,8 @@ function odin_enqueue_scripts() {
 	// FitVids.
 	wp_enqueue_script( 'fitvids', $template_url . '/assets/js/libs/jquery.fitvids.js', array(), null, true );
 
+	wp_enqueue_script( 'jquery-tinynav', $template_url . '/assets/js/tinynav.min.js', array(), null, true );
+
 	// Main jQuery.
 	wp_enqueue_script( 'odin-main', $template_url . '/assets/js/main.js', array(), null, true );
 
