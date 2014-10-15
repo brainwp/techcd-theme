@@ -58,8 +58,8 @@ function odin_pagination( $mid = 2, $end = 1, $show = false, $query = null ) {
 					'end_size'  => $end,
 					'mid_size'  => $mid,
 					'type'      => 'list',
-					'prev_text' => __( '&laquo; Previous', 'odin' ),
-					'next_text' => __( 'Next &raquo;', 'odin' ),
+					'prev_text' => __( '&laquo; Previous', 'techcd-theme' ),
+					'next_text' => __( 'Next &raquo;', 'techcd-theme' ),
 				)
 			);
 
@@ -101,7 +101,7 @@ function odin_related_posts( $display = 'category', $qty = 4, $title = '', $thum
 
 	$show = false;
 	$post_qty = (int) $qty;
-	! empty( $title ) || $title = __( 'Related Posts', 'odin' );
+	! empty( $title ) || $title = __( 'Related Posts', 'techcd-theme' );
 
 	// Creates arguments for WP_Query.
 	switch ( $display ) {
@@ -232,7 +232,7 @@ function odin_excerpt( $type = 'excerpt', $limit = 40 ) {
 function odin_breadcrumbs( $homepage = '' ) {
 	global $wp_query, $post, $author;
 
-	! empty( $homepage ) || $homepage = __( 'Home', 'odin' );
+	! empty( $homepage ) || $homepage = __( 'Home', 'techcd-theme' );
 
 	// Default html.
 	$current_before = '<li class="active">';
@@ -321,11 +321,11 @@ function odin_breadcrumbs( $homepage = '' ) {
 				echo get_category_parents( $parent_category, TRUE, ' ' );
 			}
 
-			printf( __( '%sCategory: %s%s', 'odin' ), $current_before, single_cat_title( '', false ), $current_after );
+			printf( __( '%sCategory: %s%s', 'techcd-theme' ), $current_before, single_cat_title( '', false ), $current_after );
 
 		// Tags archive.
 		} elseif ( is_tag() ) {
-			printf( __( '%sTag: %s%s', 'odin' ), $current_before, single_tag_title( '', false ), $current_after );
+			printf( __( '%sTag: %s%s', 'techcd-theme' ), $current_before, single_tag_title( '', false ), $current_after );
 
 		// Custom post type archive.
 		} elseif ( is_post_type_archive() ) {
@@ -333,13 +333,13 @@ function odin_breadcrumbs( $homepage = '' ) {
 
 		// Search page.
 		} elseif ( is_search() ) {
-			printf( __( '%sSearch result for: &quot;%s&quot;%s', 'odin' ), $current_before, get_search_query(), $current_after );
+			printf( __( '%sSearch result for: &quot;%s&quot;%s', 'techcd-theme' ), $current_before, get_search_query(), $current_after );
 
 		// Author archive.
 		} elseif ( is_author() ) {
 			$userdata = get_userdata( $author );
 
-			echo $current_before . __( 'Posted by', 'odin' ) . ' ' . $userdata->display_name . $current_after;
+			echo $current_before . __( 'Posted by', 'techcd-theme' ) . ' ' . $userdata->display_name . $current_after;
 
 		// Archives per days.
 		} elseif ( is_day() ) {
@@ -383,16 +383,16 @@ function odin_breadcrumbs( $homepage = '' ) {
 
 		// 404 page.
 		} elseif ( is_404() ) {
-			echo $current_before . __( '404 Error', 'odin' ) . $current_after;
+			echo $current_before . __( '404 Error', 'techcd-theme' ) . $current_after;
 		}
 
 		// Gets pagination.
 		if ( get_query_var( 'paged' ) ) {
 
 			if ( is_archive() ) {
-				echo ' (' . sprintf( __( 'Page %s', 'odin' ), get_query_var( 'paged' ) ) . ')';
+				echo ' (' . sprintf( __( 'Page %s', 'techcd-theme' ), get_query_var( 'paged' ) ) . ')';
 			} else {
-				printf( __( 'Page %s', 'odin' ), get_query_var( 'paged' ) );
+				printf( __( 'Page %s', 'techcd-theme' ), get_query_var( 'paged' ) );
 			}
 		}
 

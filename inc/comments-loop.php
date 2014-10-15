@@ -20,7 +20,7 @@ if ( ! function_exists( 'odin_comment_loop' ) ) {
 			case 'trackback' :
 				?>
 				<li class="post pingback">
-					<p><?php _e( 'Pingback:', 'odin' ); ?> <?php comment_author_link(); ?><?php edit_comment_link( __( 'Edit', 'odin' ), '<span class="edit-link">', '</span>' ); ?></p>
+					<p><?php _e( 'Pingback:', 'techcd-theme' ); ?> <?php comment_author_link(); ?><?php edit_comment_link( __( 'Edit', 'techcd-theme' ), '<span class="edit-link">', '</span>' ); ?></p>
 					<?php
 					break;
 				default :
@@ -29,16 +29,16 @@ if ( ! function_exists( 'odin_comment_loop' ) ) {
 					<article id="comment-<?php comment_ID(); ?>" class="comment">
 						<footer class="comment-meta">
 							<div class="comment-author vcard">
-								<?php echo sprintf( '%1$s<span class="fn">%2$s</span> %3$s <a href="%4$s"><time datetime="%5$s">%6$s %7$s </time></a> <span class="says"> %8$s</span>', get_avatar( $comment, 40 ), get_comment_author_link(), __( 'in', 'odin' ), esc_url( get_comment_link( $comment->comment_ID ) ), get_comment_time( 'c' ), get_comment_date(), __( 'at', 'odin' ), get_comment_time(), __( 'said:', 'odin' ) ); ?>
-								<?php edit_comment_link( __( 'Edit', 'odin' ), '<span class="edit-link"> | ', '</span>' ); ?>
+								<?php echo sprintf( '%1$s<span class="fn">%2$s</span> %3$s <a href="%4$s"><time datetime="%5$s">%6$s %7$s </time></a> <span class="says"> %8$s</span>', get_avatar( $comment, 40 ), get_comment_author_link(), __( 'in', 'techcd-theme' ), esc_url( get_comment_link( $comment->comment_ID ) ), get_comment_time( 'c' ), get_comment_date(), __( 'at', 'techcd-theme' ), get_comment_time(), __( 'said:', 'techcd-theme' ) ); ?>
+								<?php edit_comment_link( __( 'Edit', 'techcd-theme' ), '<span class="edit-link"> | ', '</span>' ); ?>
 							</div><!-- .comment-author .vcard -->
 							<?php if ( $comment->comment_approved == '0' ) : ?>
-								<div class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'odin' ); ?></div>
+								<div class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'techcd-theme' ); ?></div>
 							<?php endif; ?>
 						</footer>
 						<div class="comment-content"><?php comment_text(); ?></div>
 						<div class="reply">
-							<?php comment_reply_link( array_merge( $args, array( 'reply_text' => __( 'Respond', 'odin' ), 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
+							<?php comment_reply_link( array_merge( $args, array( 'reply_text' => __( 'Respond', 'techcd-theme' ), 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
 						</div><!-- .reply -->
 					</article><!-- #comment-## -->
 

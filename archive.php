@@ -27,16 +27,16 @@ get_header(); ?>
 					<h1 class="page-title">
 						<?php
 							if ( is_day() ) :
-								printf( __( 'Daily Archives: %s', 'odin' ), get_the_date() );
+								printf( __( 'Daily Archives: %s', 'techcd-theme' ), get_the_date() );
 
 							elseif ( is_month() ) :
-								printf( __( 'Monthly Archives: %s', 'odin' ), get_the_date( _x( 'F Y', 'monthly archives date format', 'odin' ) ) );
+								printf( __( 'Monthly Archives: %s', 'techcd-theme' ), get_the_date( _x( 'F Y', 'monthly archives date format', 'techcd-theme' ) ) );
 
 							elseif ( is_year() ) :
-								printf( __( 'Yearly Archives: %s', 'odin' ), get_the_date( _x( 'Y', 'yearly archives date format', 'odin' ) ) );
+								printf( __( 'Yearly Archives: %s', 'techcd-theme' ), get_the_date( _x( 'Y', 'yearly archives date format', 'techcd-theme' ) ) );
 
 							else :
-								_e( 'Archives', 'odin' );
+								_e( 'Archives', 'techcd-theme' );
 
 							endif;
 						?>

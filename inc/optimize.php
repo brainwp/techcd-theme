@@ -24,7 +24,7 @@ function odin_wp_title( $title, $sep ) {
 
 	// Add a page number if necessary:
 	if ( $paged >= 2 || $page >= 2 ) {
-		$title .= ' ' . $sep . ' ' . sprintf( __( 'Page %s', 'odin' ), max( $paged, $page ) );
+		$title .= ' ' . $sep . ' ' . sprintf( __( 'Page %s', 'techcd-theme' ), max( $paged, $page ) );
 	}
 
 	return $title;

@@ -326,7 +326,7 @@ h4 {font-size:26px;color:#1c1c1c;font-family:HelveticaNeueMdCn, Helvetica, sans-
 /* -- */
 
 /* bottom & footer */
-#bottom {background:url(../images/bg-bottom.jpg) no-repeat top left;width:1002px;height:235px;margin:0 auto;color:#1d1d1d;}
+#bottom {background:url(../images/bg-bottom.jpg) top left;margin:0 auto;color:#1d1d1d;}
 #bottom h5 {padding:10px 0 10px 0;font-size:18px;}
 #bottom p {padding:0 0 10px 0;}
 #bottom .inner {padding:20px 30px;}
@@ -590,4 +590,27 @@ h4 {font-size:26px;color:#1c1c1c;font-family:HelveticaNeueMdCn, Helvetica, sans-
     .clear-mob{
     	display:block;
     }
+}
+#bottom{
+	background-position: fixed;
+	padding-top:40px;
+}
+#bottom .logo_footer{
+	margin-bottom:10px;
+}
+#bottom span{
+	display:block;
+	font-size:1.5em;
+	color:#efefef;
+	margin-top:15px;
+	padding:0;
+	line-height: 1.2;
+}
+#bottom span.tel{
+	margin-bottom:10px;
+	font-size:2.6em;
+}
+#bottom span.emails{
+	font-size: 2.0em;
+    line-height: 0.8;
 }

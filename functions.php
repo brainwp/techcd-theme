@@ -26,7 +26,7 @@ if ( ! isset( $content_width ) ) {
 require_once get_template_directory() . '/core/classes/class-bootstrap-nav.php';
 require_once get_template_directory() . '/core/classes/class-shortcodes.php';
 require_once get_template_directory() . '/core/classes/class-thumbnail-resizer.php';
-// require_once get_template_directory() . '/core/classes/class-theme-options.php';
+require_once get_template_directory() . '/core/classes/class-theme-options.php';
 // require_once get_template_directory() . '/core/classes/class-options-helper.php';
 // require_once get_template_directory() . '/core/classes/class-post-type.php';
 // require_once get_template_directory() . '/core/classes/class-taxonomy.php';
@@ -55,14 +55,14 @@ if ( ! function_exists( 'odin_setup_features' ) ) {
 		/**
 		 * Add support for multiple languages.
 		 */
-		load_theme_textdomain( 'odin', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'techcd-theme', get_template_directory() . '/languages' );
 
 		/**
 		 * Register nav menus.
 		 */
 		register_nav_menus(
 			array(
-				'main-menu' => __( 'Main Menu', 'odin' )
+				'main-menu' => __( 'Main Menu', 'techcd-theme' )
 			)
 		);
 
@@ -155,9 +155,9 @@ add_action( 'after_setup_theme', 'odin_setup_features' );
 function odin_widgets_init() {
 	register_sidebar(
 		array(
-			'name' => __( 'Main Sidebar', 'odin' ),
+			'name' => __( 'Main Sidebar', 'techcd-theme' ),
 			'id' => 'main-sidebar',
-			'description' => __( 'Site Main Sidebar', 'odin' ),
+			'description' => __( 'Site Main Sidebar', 'techcd-theme' ),
 			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 			'after_widget' => '</aside>',
 			'before_title' => '<h3 class="widgettitle widget-title">',
@@ -267,4 +267,7 @@ require_once get_template_directory() . '/inc/plugins-support.php';
  * Custom template tags.
  */
 require_once get_template_directory() . '/inc/template-tags.php';
+
+require_once get_template_directory() . '/inc/options.php';
+
 show_admin_bar(false);

@@ -18,7 +18,7 @@ get_header(); ?>
 			<?php if ( have_posts() ) : ?>
 
 				<header class="archive-header">
-					<h1 class="archive-title"><?php printf( __( 'Tag Archives: %s', 'odin' ), single_tag_title( '', false ) ); ?></h1>
+					<h1 class="archive-title"><?php printf( __( 'Tag Archives: %s', 'techcd-theme' ), single_tag_title( '', false ) ); ?></h1>
 
 					<?php
 						// Show an optional term description.

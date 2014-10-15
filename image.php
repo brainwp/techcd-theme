@@ -20,7 +20,7 @@ get_header(); ?>
 						<div class="entry-meta entry-content">
 							<?php
 								$metadata = wp_get_attachment_metadata();
-								printf( __( 'Image total size: %s pixels', 'odin' ), sprintf( '<a href="%1$s" title="%2$s"><span>%3$s</span> &times; <span>%4$s</span></a>', wp_get_attachment_url(), esc_attr( __( 'Full image link', 'odin' ) ), $metadata['width'], $metadata['height'] ) );
+								printf( __( 'Image total size: %s pixels', 'techcd-theme' ), sprintf( '<a href="%1$s" title="%2$s"><span>%3$s</span> &times; <span>%4$s</span></a>', wp_get_attachment_url(), esc_attr( __( 'Full image link', 'techcd-theme' ) ), $metadata['width'], $metadata['height'] ) );
 							?>
 						</div><!-- .entry-meta -->
 					</header><!-- .entry-header -->
@@ -31,13 +31,13 @@ get_header(); ?>
 						<?php the_content(); ?>
 
 						<ul class="pager">
-							<li class="previous"><?php previous_image_link( false, __( '&larr; Previous image', 'odin' ) ); ?></li>
-							<li class="next"><?php next_image_link( false, __( 'Next image &rarr;', 'odin' ) ); ?></li>
+							<li class="previous"><?php previous_image_link( false, __( '&larr; Previous image', 'techcd-theme' ) ); ?></li>
+							<li class="next"><?php next_image_link( false, __( 'Next image &rarr;', 'techcd-theme' ) ); ?></li>
 						</ul><!-- .pager -->
 
 						<?php if ( ! empty( $post->post_parent ) ) : ?>
 							<ul class="pager page-title">
-								<li class="previous"><a href="<?php echo get_permalink( $post->post_parent ); ?>" title="<?php echo esc_attr( sprintf( __( 'Back to %s', 'odin' ), strip_tags( get_the_title( $post->post_parent ) ) ) ); ?>" rel="gallery"><?php printf( __( '<span class="meta-nav">&larr;</span> %s', 'odin' ), get_the_title( $post->post_parent ) ); ?></a></li>
+								<li class="previous"><a href="<?php echo get_permalink( $post->post_parent ); ?>" title="<?php echo esc_attr( sprintf( __( 'Back to %s', 'techcd-theme' ), strip_tags( get_the_title( $post->post_parent ) ) ) ); ?>" rel="gallery"><?php printf( __( '<span class="meta-nav">&larr;</span> %s', 'techcd-theme' ), get_the_title( $post->post_parent ) ); ?></a></li>
 							</ul><!-- .pager -->
 						<?php endif; ?>
 					</div><!-- .entry-content -->

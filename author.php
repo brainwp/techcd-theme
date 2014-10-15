@@ -27,7 +27,7 @@ get_header(); ?>
 							 */
 							the_post();
 
-							printf( __( 'All posts by %s', 'odin' ), get_the_author() );
+							printf( __( 'All posts by %s', 'techcd-theme' ), get_the_author() );
 						?>
 					</h1>
 					<?php if ( get_the_author_meta( 'description' ) ) : ?>
