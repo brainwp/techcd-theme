@@ -33,7 +33,8 @@ $mapa_img = $mapa_img[0];
         </a><!-- .col-md-4 mapa_footer -->
     </div>
     <!-- //bottom -->
-
+    <div id="footer" class="container curved-bottom">
+    </div>
 	<?php wp_footer(); ?>
 </body>
 </html>

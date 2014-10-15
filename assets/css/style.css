@@ -336,7 +336,7 @@ h4 {font-size:26px;color:#1c1c1c;font-family:HelveticaNeueMdCn, Helvetica, sans-
 #bottom .contact {position:relative;height:69px;width:200px;display:block;}
 #bottom .contact span {background:url(../images/type-icons.png) no-repeat 0 0;height:26px;width:24px;display:block;position:absolute;bottom:0px;right:0px;z-index:20;}
 #bottom .contact:hover span {background-position:0 -26px;}
-#footer {background:url(../images/bg-footer.jpg) no-repeat top left;width:1002px;height:35px;margin:0 auto;line-height:35px;}
+#footer {background:url(../images/bg-footer.jpg) top left;height:35px;margin:0 auto;line-height:35px;}
 #footer p {line-height:35px;color:#1d1d1d;}
 #footer p.float-left, #footer ul.float-left {padding-left:10px;}
 #footer p.float-right {padding-right:10px;}
@@ -613,4 +613,8 @@ h4 {font-size:26px;color:#1c1c1c;font-family:HelveticaNeueMdCn, Helvetica, sans-
 #bottom span.emails{
 	font-size: 2.0em;
     line-height: 0.8;
+}
+#footer{
+	border:none;
+	margin-bottom:20px;
 }
