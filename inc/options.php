@@ -58,7 +58,7 @@ function options_techcd() {
 						'label'      => __( 'Emails de contato / venda', 'techcd-theme' ), // Required
 						'type'       => 'textarea', // Required
 						// 'default'  => 'Default text', // Optional
-						'description' => __( 'Dentro da caixa de texto aperte enter para quebrar a linha', 'techcd-theme' ) // Optional
+						'description' => __( 'Coloque um email por linha', 'techcd-theme' ) // Optional
 					),
 			        array(
 						'id'         => 'footer_mapa_link', // Required

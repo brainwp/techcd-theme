@@ -38,9 +38,9 @@
 				<a href="#" id="login-box">Login</a>
 			</div><!-- .col-md-12 login_top -->
 			<header id="header" role="banner" class="col-md-12">
-				<div class="col-md-3 pull-left logo">
+				<a href="<?php echo home_url();?>" class="col-md-3 pull-left logo">
 					<img src="<?php bloginfo('template_url');?>/assets/images/logo-techcd.png">
-				</div><!-- .col-md-4 pull-left logo -->
+				</a><!-- .col-md-4 pull-left logo -->
 				<div class="col-md-12 clear-mob"></div>
 				<div id="search" class="pull-right busca_top">
 					<form action="#" id="form-search">
@@ -66,3 +66,4 @@
 					</div><!-- .main -->
 				</nav><!-- #main-menu -->
 				</header><!-- #header -->
+			    <div class="col-md-12 clear-mob"></div>

@@ -10,7 +10,7 @@
  */
 $footer_opts = get_option('footer');
 $endereco = str_replace("\n", '<br>', $footer_opts['footer_endereco']);
-$emails = str_replace("\n", '<br>', $footer_opts['footer_emails']);
+$emails = explode("\n", $footer_opts['footer_emails']);
 $mapa_img = wp_get_attachment_image_src($footer_opts['footer_mapa_img'], 'full', false );
 $mapa_img = $mapa_img[0];
 ?>
@@ -26,7 +26,9 @@ $mapa_img = $mapa_img[0];
         </div>
         <div class="col-md-4 pull-left">
         	<span class="tel"><?php echo $footer_opts['footer_tel'];?></span>
-        	<span class="emails"><?php echo $emails;?></span>
+        	<?php for ($i = 0; $i < count($emails); $i++): ?>
+        	  <a href="mailto:<?php echo $emails[$i];?>" class="col-md-12 emails"><?php echo $emails[$i]; ?></a>
+            <?php endfor; ?>
         </div><!-- .col-md-3 pull-left -->
         <a href="<?php echo $footer_opts['footer_mapa_link'];?>" class="col-md-4 pull-right mapa_footer">
         	<img src="<?php echo $mapa_img;?>">
