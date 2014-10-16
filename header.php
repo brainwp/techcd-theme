@@ -34,9 +34,11 @@
 <body <?php body_class(); ?>>
 	<div class="container">
 		<div id="page" class="site-main curved-top row">
+			<?php if(!is_user_logged_in()): ?>
 			<div class="col-md-12 login_top">
 				<a href="#" id="login-box">Login</a>
 			</div><!-- .col-md-12 login_top -->
+		    <?php endif; ?>
 			<header id="header" role="banner" class="col-md-12">
 				<a href="<?php echo home_url();?>" class="col-md-3 pull-left logo">
 					<img src="<?php bloginfo('template_url');?>/assets/images/logo-techcd.png">

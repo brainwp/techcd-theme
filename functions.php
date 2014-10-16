@@ -269,5 +269,11 @@ require_once get_template_directory() . '/inc/plugins-support.php';
 require_once get_template_directory() . '/inc/template-tags.php';
 
 require_once get_template_directory() . '/inc/options.php';
-
+//class post destacado
+require_once get_template_directory() . '/inc/post-destacado.php';
+//acf
+//define( 'ACF_LITE', true );
+require get_template_directory() . '/inc/advanced-custom-fields/acf.php';
+//acf fields
+require get_template_directory() . '/inc/acf-fields.php';
 show_admin_bar(false);
