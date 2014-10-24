@@ -652,3 +652,26 @@ h4 {font-size:26px;color:#1c1c1c;font-family:HelveticaNeueMdCn, Helvetica, sans-
 #post_destacado a{
 	margin-top:20px;
 }
+#sidebar_home .home_widget img{
+	width:100%;
+}
+#sidebar_home .home_widget .titulo{
+	color:black;
+	font-size:2.2em;
+}
+#sidebar_home .home_widget .text, #sidebar_home .home_widget .titulo, #sidebar_home .home_widget .link{
+	padding:0;
+	padding-top:8px;
+}
+#sidebar_home{
+	margin-bottom:20px;
+}
+#sidebar_home .chave{
+	background:url('../images/ico3.jpg') right no-repeat;
+}
+#sidebar_home .camera{
+	background:url('../images/ico2.jpg') right no-repeat;
+}
+#sidebar_home .monitor{
+	background:url('../images/ico1.jpg') right no-repeat;
+}

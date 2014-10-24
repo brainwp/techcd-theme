@@ -276,4 +276,6 @@ require_once get_template_directory() . '/inc/post-destacado.php';
 require get_template_directory() . '/inc/advanced-custom-fields/acf.php';
 //acf fields
 require get_template_directory() . '/inc/acf-fields.php';
+//widgets
+require get_template_directory() . '/inc/widgets.php';
 show_admin_bar(false);
