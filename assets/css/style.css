@@ -675,3 +675,23 @@ h4 {font-size:26px;color:#1c1c1c;font-family:HelveticaNeueMdCn, Helvetica, sans-
 #sidebar_home .monitor{
 	background:url('../images/ico1.jpg') right no-repeat;
 }
+#marcas_home h2{
+	font-size:2.2em;
+	font-weight: bold;
+	font-style:italic;
+	color:black;
+	padding-bottom:10px;
+}
+#marcas_home img{
+	width:100%;
+	background: white;
+	border:2px solid #e7e7e7;
+	border-radius:3px;
+	padding:5px;
+	margin:0;
+}
+#marcas_home .marcas_img{
+	padding:0;
+	margin:0;
+	margin-bottom:10px;
+}

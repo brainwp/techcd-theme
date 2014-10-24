@@ -10,6 +10,10 @@ function options_techcd() {
 	$settings->set_tabs(
 		array(
 			array(
+				'id' => 'home_opt', // Slug/ID of the Settings tab (Required)
+				'title' => __( 'Home', 'techcd-theme' ), // Settings tab title (Required)
+			),
+			array(
 				'id' => 'footer', // Slug/ID of the Settings tab (Required)
 				'title' => __( 'Rodapé', 'techcd-theme' ), // Settings tab title (Required)
 			),
@@ -69,6 +73,24 @@ function options_techcd() {
 					array(
 						'id'         => 'footer_mapa_img', // Required
 						'label'      => __( 'Imagem do mapa', 'techcd-theme' ), // Required
+						'type'       => 'image', // Required
+						// 'default'  => 'Default text', // Optional
+					),
+				)
+			),
+			'home_section' => array( // Slug/ID of the section (Required)
+				'tab'   => 'home_opt', // Tab ID/Slug (Required)
+				'title' => __( 'Opções da Página Inicial', 'techcd-theme' ), // Section title (Required)
+				'fields' => array( // Section fields (Required)
+
+					/**
+					 * Default input examples.
+					 */
+
+					// Text Field.
+					array(
+						'id'         => 'marcas_img', // Required
+						'label'      => __( 'Imagem das Marcas', 'techcd-theme' ), // Required
 						'type'       => 'image', // Required
 						// 'default'  => 'Default text', // Optional
 					),
