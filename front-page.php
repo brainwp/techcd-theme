@@ -20,6 +20,7 @@ if(!empty($option_destaque)){
 	get_template_part('content','post-destacado');
 }
 ?>
+<?php echo do_shortcode( '[brasa_slider name="titulo pra pesquisar no shortcode"]' ); ?>
 <?php
 //get_sidebar();
 get_footer();
