@@ -695,3 +695,14 @@ h4 {font-size:26px;color:#1c1c1c;font-family:HelveticaNeueMdCn, Helvetica, sans-
 	margin:0;
 	margin-bottom:10px;
 }
+article .entry-title{
+	color:black;
+}
+#header_separator{
+	height:20px;
+	background: url('../images/bg-rotator.jpg') center no-repeat;
+	background-size: 100% 16px;
+}
+article .entry-content{
+	color:black;
+}

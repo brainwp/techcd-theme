@@ -278,4 +278,4 @@ require get_template_directory() . '/inc/advanced-custom-fields/acf.php';
 require get_template_directory() . '/inc/acf-fields.php';
 //widgets
 require get_template_directory() . '/inc/widgets.php';
-show_admin_bar(false);
+//show_admin_bar(false);
