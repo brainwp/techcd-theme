@@ -17,6 +17,10 @@ function options_techcd() {
 				'id' => 'footer', // Slug/ID of the Settings tab (Required)
 				'title' => __( 'Rodapé', 'techcd-theme' ), // Settings tab title (Required)
 			),
+			array(
+				'id' => 'woo_opt', // Slug/ID of the Settings tab (Required)
+				'title' => __( 'Vitrine', 'techcd-theme' ), // Settings tab title (Required)
+			),
 			//array(
 			//	'id' => 'odin_html5',
 			//	'title' => __( 'HTML5 Fields', 'techcd-theme' )
@@ -91,6 +95,24 @@ function options_techcd() {
 					array(
 						'id'         => 'marcas_img', // Required
 						'label'      => __( 'Imagem das Marcas', 'techcd-theme' ), // Required
+						'type'       => 'image', // Required
+						// 'default'  => 'Default text', // Optional
+					),
+				)
+			),
+			'woo_section' => array( // Slug/ID of the section (Required)
+			'tab'   => 'woo_opt', // Tab ID/Slug (Required)
+			'title' => __( 'Opções da Vitrine', 'techcd-theme' ), // Section title (Required)
+			'fields' => array( // Section fields (Required)
+
+					/**
+					 * Default input examples.
+					 */
+
+					// Text Field.
+					array(
+						'id'         => 'telefone_img', // Required
+						'label'      => __( 'Imagem do telefone', 'techcd-theme' ), // Required
 						'type'       => 'image', // Required
 						// 'default'  => 'Default text', // Optional
 					),

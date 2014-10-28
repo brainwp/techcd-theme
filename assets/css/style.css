@@ -706,3 +706,85 @@ article .entry-title{
 article .entry-content{
 	color:black;
 }
+header.wooheader{
+	margin-top:30px;
+	background: url('../images/bg-header.jpg');
+	padding:10px;
+}
+header.wooheader h1{
+	color:black;
+}
+img.woo-telefone{
+	width:100%;
+	padding:0;
+	padding-top:20px;
+	padding-bottom: 20px;
+}
+#woo_list_cat{
+	padding:0;
+	margin:0;
+}
+#woo_list_cat a{
+	width:100%;
+	display:block;
+	float:left;
+	margin-bottom:3px;
+	text-align: center;
+	padding:10px;
+	background:#a0cf0d;
+	border-radius:4px;
+	font-size:1.1em;
+	color:black;
+}
+.woo_pagination ul li span, .woo_pagination ul li a, .woo_pagination ul li span.current{
+	background-color:inherit !important;
+	background: url(../images/pagination-a.png) no-repeat 0 0;
+	display: block;
+width: 24px;
+height: 26px;
+line-height: 26px;
+text-align: center;
+color: #656565 !important;
+font-family: HelveticaNeueMdCn, Helvetica, sans-serif;
+border:none;
+padding:0;
+}
+.woo_pagination ul li a:hover{
+	background-position:0 -26px;
+}
+.woo_pagination ul li a.next{
+	background-position: 0 -104px;
+    margin-left: 5px;
+}
+.woo_pagination ul li a.prev{
+	background-position: 0 -52px;
+    margin-right: 5px;
+}
+#content .woo_post_box{
+	padding-bottom:30px;
+}
+#content .woo_post_box img{
+	width:100%;
+	height:175px;
+}
+#content .woo_post_box .woo_infos{
+	background:white;
+	padding:10px
+}
+#content .woo_post_box .woo_infos h3{
+	text-align: center;
+	font-size:1.3em;
+	color:black;
+	font-weight: bold;
+}
+#content .woo_post_box .woo_infos span{
+	color:#bababa;
+	font-style: italic;
+	margin-bottom: 10px;
+}
+#content .woo_post_box .woo_infos .mais_detalhes{
+	display:block;
+	width:100%;
+	height:60px;
+	background:url('../images/maisdetalhes.png') center center no-repeat;
+}
