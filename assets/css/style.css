@@ -788,3 +788,9 @@ padding:0;
 	height:60px;
 	background:url('../images/maisdetalhes.png') center center no-repeat;
 }
+.woocommerce #payment ul{
+	display:none !important;
+}
+table .product-total span, .woocommerce table.shop_table tfoot, table .product-total, .woocommerce-shipping-fields{
+	display:none !important;
+}
