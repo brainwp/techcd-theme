@@ -1,5 +1,6 @@
 <?php
 //content-post-destacado.php
+global $post_destacado;
 ?>
 	<div class="col-md-12" id="post_destacado">
 		<div class="col-md-7 pull-left">
@@ -9,7 +10,7 @@
 		    <a href="<?php echo get_permalink($post_destacado->ID);?>" class="read-more small float-left">Leia mais...</a>
 		</div><!-- .col-md-8 pull-left -->
 	   <div class="col-md-4 pull-right">
-	    	<?php the_post_thumbnail('th-destaque'); ?>
+	    	<?php echo get_the_post_thumbnail( $post_destacado->ID, 'th-destaque', false );  ?>
 		</div><!-- .col-md-4 -->
 
 	</div><!-- #post_destacado.col-md-12 -->

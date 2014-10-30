@@ -33,13 +33,14 @@ class Post_Destacado {
 		}
 	}
 	public function save($post_id){
-
-		$radio = $_POST['post_destacado'];
-		if($radio == 'true'){
-			update_option('post_destacado_option', $post_id);
-		}
-		elseif($radio == 'false' && get_option('post_destacado_option') == $post_id){
-			delete_option('post_destacado_option');
+		if(isset($_POST['post_destacado'])){
+			$radio = $_POST['post_destacado'];
+			if($radio == 'true'){
+				update_option('post_destacado_option', $post_id);
+			}
+			elseif($radio == 'false' && get_option('post_destacado_option') == $post_id){
+				delete_option('post_destacado_option');
+			}
 		}
 	}
 }

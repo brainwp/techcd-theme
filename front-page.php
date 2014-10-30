@@ -16,7 +16,7 @@ get_header();
 ?>
 <div class="col-md-12" style="height:20px"></div>
 <?php
-echo do_shortcode( '[brasa_slider name="titulo pra pesquisar no shortcode"]' );
+echo do_shortcode( '[brasa_slider name="Primeiro Slider de Exemplo"]' );
 $option_destaque = get_option('post_destacado_option');
 if(!empty($option_destaque)){
 	$post_destacado = get_post($option_destaque);
