@@ -36,7 +36,7 @@
 		<div id="page" class="site-main curved-top row">
 			<?php if(!is_user_logged_in()): ?>
 			<div class="col-md-12 login_top">
-				<a href="#" id="login-box">Login</a>
+				<a href="<?php echo home_url();?>/logar<?php echo get_option( 'reveal-modal-string-random' ); ?>/" id="login-box">Login</a>
 			</div><!-- .col-md-12 login_top -->
 		    <?php endif; ?>
 			<header id="header" role="banner" class="col-md-12">
@@ -47,7 +47,7 @@
 				<div id="search" class="pull-right busca_top">
 					<form action="#" id="form-search">
 						<fieldset>
-							<input type="text" placeholder="Busca" class="input-text autoclear" /><input type="submit" value="" class="input-submit" />
+							<input type="text" placeholder="Busca" class="input-text autoclear" /><input type=me"submit" value="" class="input-submit" />
 						</fieldset>
 					</form>
 				</div><!-- .col-md-2 busca_top -->

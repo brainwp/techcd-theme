@@ -9,7 +9,7 @@ Description: Odin main stylesheet.
 
 * {margin:0;padding:0;}
 html {height:100%;margin:0;padding:0;}
-body {margin:0;padding:0;background:url(../images/bg-body.jpg) no-repeat top center #20101f;font-family:Arial, Helvetica, sans-serif;font-size:12px;height:100%;color:#808080;}
+body {margin:0;padding:0;background:url(../images/bg-body.jpg) no-repeat top center #20101f !important;font-family:Arial, Helvetica, sans-serif;font-size:12px;height:100%;color:#808080;}
 img{border:0;}
 a, a:hover{text-decoration:none;outline:none;}
 h1,h2,h3,h4,h5,h6 {padding:0;margin:0;font-weight:normal;}
