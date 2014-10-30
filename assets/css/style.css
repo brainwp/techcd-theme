@@ -794,3 +794,6 @@ padding:0;
 table .product-total span, .woocommerce table.shop_table tfoot, table .product-total, .woocommerce-shipping-fields{
 	display:none !important;
 }
+.prev-post-reveal-nav,.next-post-reveal-nav{
+	display:none;
+}
