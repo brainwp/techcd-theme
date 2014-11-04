@@ -100,7 +100,7 @@ class Home_Widget extends WP_Widget {
 		<div class="col-md-4 home_widget">
 			<img src="<?php echo $image; ?>">
 			<div class="col-md-12 titulo <?php echo $class; ?>">
-				<span><?php echo $title; ?></span>
+				<span class="item"><?php echo $title; ?></span>
 			</div>
 			<div class="col-md-12 text">
 				<?php echo $text; ?>

@@ -647,6 +647,10 @@ h4 {font-size:26px;color:#1c1c1c;font-family: 'Cabin', sans-serif;}
 	font-size: 2.0em;
 	padding:0;
 }
+#bottom .mapa_footer img {
+	border: 1px solid #868686;
+	border-radius: 3px;
+}
 #footer{
 	border:none;
 	margin-bottom:20px;
@@ -726,12 +730,13 @@ h4 {font-size:26px;color:#1c1c1c;font-family: 'Cabin', sans-serif;}
 	font-size: 1.75em;
 	padding: 5px 0;
 }
-#sidebar_home .home_widget .titulo span{
-	max-width: 85%;
+#sidebar_home .home_widget .titulo span.item{
+	display: inline-block;
+	overflow: hidden;
+	width: 85%;
 }
 #sidebar_home .home_widget .text, #sidebar_home .home_widget .titulo, #sidebar_home .home_widget .link{
-	padding:0;
-	padding-top:8px;
+	padding: 13px 0 0 0;
 }
 .home_widget .text {
 	color: #7f7f7f;
@@ -741,13 +746,13 @@ h4 {font-size:26px;color:#1c1c1c;font-family: 'Cabin', sans-serif;}
 	margin-bottom:20px;
 }
 #sidebar_home .chave{
-	background:url('../images/ico3.jpg') right no-repeat;
+	background:url('../images/ico3.jpg') right 16px no-repeat;
 }
 #sidebar_home .camera{
-	background:url('../images/ico2.jpg') right no-repeat;
+	background:url('../images/ico2.jpg') right 16px no-repeat;
 }
 #sidebar_home .monitor{
-	background:url('../images/ico1.jpg') right no-repeat;
+	background:url('../images/ico1.jpg') right 16px no-repeat;
 }
 #marcas_home {
 	padding: 0 15px 20px 30px;
