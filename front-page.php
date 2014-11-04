@@ -24,11 +24,17 @@ if(!empty($option_destaque)){
 	get_template_part('content','post-destacado');
 }
 ?>
+
+<div class="line"></div>
+
 <?php if ( is_active_sidebar( 'home_sidebar' ) ) : ?>
 	<div class="col-md-12" id="sidebar_home">
 		<?php dynamic_sidebar( 'home_sidebar' ); ?>
 	</div><!-- #sidebar_home.col-md-12 -->
 <?php endif; ?>
+
+<div class="line"></div>
+
 <?php get_template_part('content','bottom'); ?>
 <?php
 //get_sidebar();
