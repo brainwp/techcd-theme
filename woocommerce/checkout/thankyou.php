@@ -1,0 +1,54 @@
+<?php
+/**
+ * Thankyou page
+ *
+ * @author 		WooThemes
+ * @package 	WooCommerce/Templates
+ * @version     2.2.0
+ */
+
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+
+if ( $order ) : ?>
+
+	<?php if ( $order->has_status( 'failed' ) ) : ?>
+
+		<p><?php _e( 'Unfortunately your order cannot be processed as the originating bank/merchant has declined your transaction.', 'woocommerce' ); ?></p>
+
+		<p><?php
+			if ( is_user_logged_in() )
+				_e( 'Please attempt your purchase again or go to your account page.', 'woocommerce' );
+			else
+				_e( 'Please attempt your purchase again.', 'woocommerce' );
+		?></p>
+
+		<p>
+			<a href="<?php echo esc_url( $order->get_checkout_payment_url() ); ?>" class="button pay"><?php _e( 'Pay', 'woocommerce' ) ?></a>
+			<?php if ( is_user_logged_in() ) : ?>
+			<a href="<?php echo esc_url( get_permalink( wc_get_page_id( 'myaccount' ) ) ); ?>" class="button pay"><?php _e( 'My Account', 'woocommerce' ); ?></a>
+			<?php endif; ?>
+		</p>
+
+	<?php else : ?>
+
+		<p><?php echo apply_filters( 'woocommerce_thankyou_order_received_text', __( 'Recebemos seu orçamento - Entraremos em contato o mais breve possível', 'techcd-theme' ), $order ); ?></p>
+
+		<ul class="order_details">
+			<li class="order">
+				<?php _e( 'Order:', 'woocommerce' ); ?>
+				<strong><?php echo $order->get_order_number(); ?></strong>
+			</li>
+			<li class="date">
+				<?php _e( 'Date:', 'woocommerce' ); ?>
+				<strong><?php echo date_i18n( get_option( 'date_format' ), strtotime( $order->order_date ) ); ?></strong>
+			</li>
+		</ul>
+		<div class="clear"></div>
+
+	<?php endif; ?>
+
+<?php else : ?>
+
+	<p><?php echo apply_filters( 'woocommerce_thankyou_order_received_text', __( 'Recebemos seu orçamento - Entraremos em contato o mais breve possível', 'techcd-theme' ), null ); ?></p>
+
+<?php endif; ?>

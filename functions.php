@@ -279,3 +279,5 @@ require get_template_directory() . '/inc/acf-fields.php';
 //widgets
 require get_template_directory() . '/inc/widgets.php';
 //show_admin_bar(false);
+//woocommerce orçamento
+require get_template_directory() . '/inc/woo-orcamento.php';

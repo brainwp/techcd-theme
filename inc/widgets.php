@@ -126,7 +126,7 @@ class Home_Widget extends WP_Widget {
 	}
 
 	public function form( $instance ) {
-		$instance = wp_parse_args( (array) $instance, array( 'link' => '', 'text' => '', 'class' => '', 'title' => '', 'text' => '') );
+		$instance = wp_parse_args( (array) $instance, array( 'link' => '', 'text' => '', 'class' => '', 'title' => '', 'text' => '', 'image' => '') );
 		$link = strip_tags($instance['link']);
 		$image = strip_tags($instance['image']);
 		$class = strip_tags($instance['class']);

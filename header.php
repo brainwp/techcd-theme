@@ -25,6 +25,7 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 	<link href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon.ico" rel="shortcut icon" />
+	<link href='http://fonts.googleapis.com/css?family=Cabin:400,600,700,400italic' rel='stylesheet' type='text/css'>
 	<!--[if lt IE 9]>
 	<script src="<?php echo get_template_directory_uri(); ?>/assets/js/html5.js"></script>
 	<![endif]-->
@@ -36,7 +37,7 @@
 		<div id="page" class="site-main curved-top row">
 			<?php if(!is_user_logged_in()): ?>
 			<div class="col-md-12 login_top">
-				<a href="#" id="login-box">Login</a>
+				<a href="<?php echo home_url();?>/logar<?php echo get_option( 'reveal-modal-string-random' ); ?>/" id="login-box">Login</a>
 			</div><!-- .col-md-12 login_top -->
 		    <?php endif; ?>
 			<header id="header" role="banner" class="col-md-12">
@@ -44,13 +45,7 @@
 					<img src="<?php bloginfo('template_url');?>/assets/images/logo-techcd.png">
 				</a><!-- .col-md-4 pull-left logo -->
 				<div class="col-md-12 clear-mob"></div>
-				<div id="search" class="pull-right busca_top">
-					<form action="#" id="form-search">
-						<fieldset>
-							<input type="text" placeholder="Busca" class="input-text autoclear" /><input type="submit" value="" class="input-submit" />
-						</fieldset>
-					</form>
-				</div><!-- .col-md-2 busca_top -->
+				<?php get_search_form(true); ?>
 				<nav id="top-menu" class="col-md-7 pull-right" role="navigation">
 					<div class="main">
 						<?php

@@ -50,4 +50,45 @@ if(function_exists("register_field_group"))
 		'menu_order' => 0,
 	));
 }
+if(function_exists("register_field_group"))
+{
+	register_field_group(array (
+		'id' => 'acf_orcamento-opcoesinformacoes',
+		'title' => 'Orçamento - Opções/Informações',
+		'fields' => array (
+			array (
+				'key' => 'field_54590abb24535',
+				'label' => 'Disponibilidade',
+				'name' => 'woo_status_orcamento',
+				'type' => 'radio',
+				'choices' => array (
+					'Em estoque' => 'Em estoque',
+					'Sob encomenda' => 'Sob encomenda',
+				),
+				'other_choice' => 1,
+				'save_other_choice' => 1,
+				'default_value' => '',
+				'layout' => 'vertical',
+			),
+		),
+		'location' => array (
+			array (
+				array (
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => 'product',
+					'order_no' => 0,
+					'group_no' => 0,
+				),
+			),
+		),
+		'options' => array (
+			'position' => 'side',
+			'layout' => 'default',
+			'hide_on_screen' => array (
+			),
+		),
+		'menu_order' => 0,
+	));
+}
 ?>
