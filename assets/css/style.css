@@ -840,28 +840,29 @@ table .product-total span, .woocommerce table.shop_table tfoot, table .product-t
 	width:100%;
 	padding:0;
 }
-#slider-woo-product .slick-next{
+#slider-woo-product .slick-next, body.home .is_slider .slick-next{
 	background: url(../images/rotator-prev-next.png) no-repeat top left;
 	width: 32px;
 	height: 64px;
 	right:15px;
 	background-position: 0 -64px;
 }
-#slider-woo-product .slick-next:before{
+#slider-woo-product .slick-next:before, body.home .is_slider .slick-next:before{
 	display: none;
 	content:'';
 }
-#slider-woo-product .slick-prev{
+#slider-woo-product .slick-prev, body.home .is_slider .slick-prev{
 	background: url(../images/rotator-prev-next.png) no-repeat top left;
 	width: 32px;
 	height: 64px;
 	left:15px;
 }
-#slider-woo-product .slick-prev:before, #slider-woo-product .slick-dots button:before{
+#slider-woo-product .slick-prev:before, #slider-woo-product .slick-dots button:before,
+body.home .is_slider .slick-prev:before, body.home .is_slider .slick-dots button:before{
 	display: none;
 	content:'';
 }
-#slider-woo-product .slick-dots button{
+#slider-woo-product .slick-dots button, body.home .is_slider .slick-dots button{
 	font-size: 0px;
 	line-height: 0px;
 	display: inline-block;
@@ -870,10 +871,10 @@ table .product-total span, .woocommerce table.shop_table tfoot, table .product-t
 	width: 11px;
 	margin: 0 1px;
 }
-#slider-woo-product .slick-dots li{
+#slider-woo-product .slick-dots li, body.home .is_slider .slick-dots{
 	margin:0;
 }
-#slider-woo-product .slick-dots .slick-active button{
+#slider-woo-product .slick-dots .slick-active button, body.home .is_slider .slick-dots .slick-active button{
 	background-position: 0 -12px;
 }
 #woo-content-cart #add-to-cart-techcd{
