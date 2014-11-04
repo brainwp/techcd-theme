@@ -44,13 +44,7 @@
 					<img src="<?php bloginfo('template_url');?>/assets/images/logo-techcd.png">
 				</a><!-- .col-md-4 pull-left logo -->
 				<div class="col-md-12 clear-mob"></div>
-				<div id="search" class="pull-right busca_top">
-					<form action="#" id="form-search">
-						<fieldset>
-							<input type="text" placeholder="Busca" class="input-text autoclear" /><input type=me"submit" value="" class="input-submit" />
-						</fieldset>
-					</form>
-				</div><!-- .col-md-2 busca_top -->
+				<?php get_search_form(true); ?>
 				<nav id="top-menu" class="col-md-7 pull-right" role="navigation">
 					<div class="main">
 						<?php

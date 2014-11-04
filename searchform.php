@@ -6,11 +6,11 @@
  * @since 2.2.0
  */
 ?>
-
-<form method="get" id="searchform" class="form-inline" action="<?php echo esc_url( home_url( '/' ) ); ?>" role="search">
-	<div class="form-group">
-		<label for="s" class="sr-only"><?php _e( 'Search', 'techcd-theme' ); ?></label>
-		<input type="text" class="form-control" name="s" id="s" />
-	</div>
-	<input type="submit" class="btn btn-default" value="<?php esc_attr_e( 'Search', 'techcd-theme' ); ?>" />
-</form>
+<div id="search" class="pull-right busca_top">
+	<form method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>" role="search" id="form-search">
+		<fieldset>
+			<input type="text" name="s" placeholder="Busca" class="input-text autoclear" />
+			<input type="submit" value="" class="input-submit" />
+		</fieldset>
+	</form>
+</div><!-- .col-md-2 busca_top -->

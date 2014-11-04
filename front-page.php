@@ -12,34 +12,24 @@
  * @package Odin
  * @since 2.2.0
  */
-
 get_header();
-
 ?>
-
 <div class="col-md-12" style="height:20px"></div>
-
-<?php echo do_shortcode( '[brasa_slider name="Primeiro Slider de Exemplo"]' ); ?>
-
-<div class="sombra col-sm-12"></div>
-
-<?php	
-	if( $option_destaque = get_option('post_destacado_option') ){
-		$post_destacado = get_post( $option_destaque );
-		get_template_part( 'content','post-destacado' );
-	}
+<?php
+echo do_shortcode( '[brasa_slider name="Primeiro Slider de Exemplo"]' );
+$option_destaque = get_option('post_destacado_option');
+if(!empty($option_destaque)){
+	global $post_destacado;
+	$post_destacado = get_post($option_destaque);
+	get_template_part('content','post-destacado');
+}
 ?>
-
-<div class="line"></div>
-
 <?php if ( is_active_sidebar( 'home_sidebar' ) ) : ?>
 	<div class="col-md-12" id="sidebar_home">
 		<?php dynamic_sidebar( 'home_sidebar' ); ?>
 	</div><!-- #sidebar_home.col-md-12 -->
 <?php endif; ?>
-
 <?php get_template_part('content','bottom'); ?>
-
 <?php
 //get_sidebar();
 get_footer();
