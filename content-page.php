@@ -7,8 +7,8 @@
  */
 ?>
 <div class="col-md-12" id="header_separator"></div><!-- #header_separator.col-md-12 -->
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<?php the_title( '<header class="entry-header"><h1 class="entry-title">', '</h1></header><!-- .entry-header -->' ); ?>
+<article id="post-<?php the_ID(); ?>" <?php post_class('col-md-12'); ?>>
+	<?php the_title( '<header class="entry-header"><h1 class="entry-title page">', '</h1></header><!-- .entry-header -->' ); ?>
 
 	<div class="entry-content">
 		<?php
