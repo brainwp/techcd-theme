@@ -9,7 +9,15 @@ Description: Odin main stylesheet.
 
 * {margin:0;padding:0;}
 html {height:100%;margin:0;padding:0;}
-body {margin:0;padding:0;background:url(../images/bg-body.jpg) no-repeat top center #20101f !important;font-family:Arial, Helvetica, sans-serif;font-size:12px;height:100%;color:#808080;}
+body {
+	margin:0;
+	padding:0;
+	background:url(../images/bg-body.jpg) no-repeat top center #20101f !important;
+	font-family: 'Cabin', sans-serif;
+	font-size:12px;
+	height:100%;
+	color:#808080;
+}
 img{border:0;}
 a, a:hover{text-decoration:none;outline:none;}
 h1,h2,h3,h4,h5,h6 {padding:0;margin:0;font-weight:normal;}
@@ -66,8 +74,8 @@ img.photo.float-right {margin-left:20px;}
 /* -- */
 
 /* headings stylization */
-h5 {font-size:20px;color:#1c1c1c;font-family:HelveticaNeueMdCn, Helvetica, sans-serif;}
-h4 {font-size:26px;color:#1c1c1c;font-family:HelveticaNeueMdCn, Helvetica, sans-serif;}
+h5 {font-size:20px;color:#1c1c1c;font-family: 'Cabin', sans-serif;}
+h4 {font-size:26px;color:#1c1c1c;font-family: 'Cabin', sans-serif;}
 /* -- */
 
 #container {padding:10px 0 30px 0;}
@@ -85,7 +93,7 @@ h4 {font-size:26px;color:#1c1c1c;font-family:HelveticaNeueMdCn, Helvetica, sans-
 #top-menu.float-left .main li {padding-right:10px;}
 #top-menu.float-right .main li {padding-left:10px;}
 #top-menu .main li a {background-position:top left;padding:0 0 0 20px;color:#656565;}
-#top-menu .main li a .menu_span {background-position:top right;height:25px;line-height:25px;text-align:center;padding:0 20px 0 0;font-family:LucidaGrandeBold, Arial, sans-serif;}
+#top-menu .main li a .menu_span {background-position:top right;height:25px;line-height:25px;text-align:center;padding:0 20px 0 0;font-family: 'Cabin', sans-serif;}
 #top-menu .main li a:hover {background-position:bottom left;}
 #top-menu .main li a:hover span, #top-menu .main li a.current span {background-position:bottom right;}
 #top-menu .main li a:hover, #top-menu .main li a.current {color:#85C226;background-position:bottom left;}
@@ -95,7 +103,7 @@ h4 {font-size:26px;color:#1c1c1c;font-family:HelveticaNeueMdCn, Helvetica, sans-
 #top-menu.float-left .sub {left:0;}
 #top-menu .sub li, #top-menu .sub li a, #top-mnu .sub li a span {display:block;float:none;background:none;padding:0;}
 #top-menu.float-left .sub li, #top-menu.float-right .sub li {line-height:25px;padding:2px 0;}
-#top-menu .sub li a {font-family:LucidaGrandeRegular, Arial, sans-serif;}
+#top-menu .sub li a {font-family: 'Cabin', sans-serif;}
 /* -- */
 
 #login-box {position:absolute;top:0;right:0;background:url(../images/login.png) no-repeat top left;height:24px;line-height:24px;padding:0 0 0 27px;font-size:11px;color:#ededed;}
@@ -112,8 +120,8 @@ h4 {font-size:26px;color:#1c1c1c;font-family:HelveticaNeueMdCn, Helvetica, sans-
 
 /* header */
 #header {padding:0 30px;}
-#header h2 {display:block;float:left;font-size:24px;color:#000;vertical-align:middle;font-family:HelveticaNeueMdCn, Helvetica, sans-serif;line-height:56px;}
-#header p {display:block;float:left;color:#5790dc;font-style:italic;vertical-align:middle;padding:2px 0 0 20px;font-size:15px;font-family:HelveticaNeueLtCnO, Helvetica, sans-serif;line-height:56px;}
+#header h2 {display:block;float:left;font-size:24px;color:#000;vertical-align:middle;font-family: 'Cabin', sans-serif;line-height:56px;}
+#header p {display:block;float:left;color:#5790dc;font-style:italic;vertical-align:middle;padding:2px 0 0 20px;font-size:15px;font-family: 'Cabin', sans-serif;line-height:56px;}
 #header .button {margin-top:17px;}
 /* -- */
 
@@ -131,7 +139,7 @@ h4 {font-size:26px;color:#1c1c1c;font-family:HelveticaNeueMdCn, Helvetica, sans-
 #rotator ul li {background:none !important;position:relative;height:356px;width:940px;}
 #rotator ul li .image {position:absolute;bottom:0;right:10px;z-index:10;}
 #rotator ul li .data {position:relative;z-index:20;padding:10px 0 0 20px;}
-#rotator ul li .data h1 {color:#000;font-size:37px;font-family:HelveticaNeueMdCn, Arial, sans-serif;line-height:40px;}
+#rotator ul li .data h1 {color:#000;font-size:37px;line-height:40px;}
 #rotator ul li .data h1 strong {color:#5790dc;}
 #rotator ul li .data p {color:#808080;padding:5px 0 15px 0;}
 #rotator .controls {position:absolute;bottom:-10px;left:0;width:940px;text-align:center;z-index:30;height:12px;line-height:12px;}
