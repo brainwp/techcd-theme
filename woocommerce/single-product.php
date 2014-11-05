@@ -11,18 +11,18 @@ get_header('shop'); ?>
 <div class="col-md-12 clear-mob"></div>
 <div id="primary" class="col-md-9 pull-right">
 	<div class="col-md-12 clear-mob"></div>
-	<div class="col-md-12" style="clear:both;height:20px"></div>
-	<?php if(isset($_POST['add-to-cart'])): ?>
+	<div class="col-md-12" style="clear:both;height:20px;"></div>
+	<?php if(isset($_POST['add-to-cart'])){ ?>
 	    <a class="col-md-12 alert alert-success" role="alert" style="margin-top:10px" href="<?php echo home_url();?>/carrinho/">
 	    	<?php _e('Adicionado ao orçamento - Clique aqui para ver todo orçamento!', 'techcd-theme');?>
         </a>
-	<?php endif; ?>
-	<div class="col-md-12" style="clear:both;height:20px"></div>
+        <div class="col-md-12" style="clear:both;height:20px;"></div>
+	<?php } ?>
+	&nbsp;
 	<div id="content" class="site-content" role="main">
 		<?php
 				// Start the Loop.
 		while ( have_posts() ) : the_post();
-
 			// Include the page content template.
 		     wc_get_template_part( 'content', 'single-product' );
 
