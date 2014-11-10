@@ -46,7 +46,7 @@
 				</a><!-- .col-md-4 pull-left logo -->
 				<div class="col-md-12 clear-mob"></div>
 				<?php get_search_form(true); ?>
-				<nav id="top-menu" class="col-md-7 pull-right" role="navigation">
+				<nav id="top-menu" class="top-menu col-md-7 pull-right" role="navigation">
 					<div class="main">
 						<?php
 						wp_nav_menu(
