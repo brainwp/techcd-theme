@@ -104,7 +104,7 @@ class Woo_Term_Views{
 			while ( $query->have_posts() ) {
 				$query->the_post();
 				$term = get_term_by( 'id', get_the_title(), 'product_cat' );
-				if($term->parent == 0){
+				if($term && $term->parent == 0){
 				   	$html .= '<li>';
 				   	$link = get_term_link($term, 'product_cat');
 				   	$html .= '<a href="'.esc_url($link).'">';
