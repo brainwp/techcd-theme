@@ -283,3 +283,5 @@ require get_template_directory() . '/inc/widgets.php';
 require get_template_directory() . '/inc/woo-orcamento.php';
 //woocommerce categorias mais lidas
 require get_template_directory() . '/inc/woo-term-views.php';
+//woocommerce produtos mais acessados
+require get_template_directory() . '/inc/woo-products-views.php';
