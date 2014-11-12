@@ -12,11 +12,11 @@ get_header('shop'); ?>
 	</header><!-- .wooheader -->
 <?php endif; ?>
 <div class="col-md-12 clear-mob"></div>
-<div class="col-md-3" id="sidebar-woo">
+<div class="col-md-3 single" id="sidebar-woo">
 	<?php get_sidebar('woo'); ?>
 </div><!-- #sidebar-woo.col-md-2 -->
 <div class="col-md-12 clear-mob"></div>
-<div id="primary" class="col-md-9 pull-right">
+<div id="primary" class="col-md-8 pull-right single">
 	<div class="col-md-12 clear-mob"></div>
 	<div class="col-md-12" style="clear:both;height:20px;"></div>
 	<?php if(isset($_POST['add-to-cart'])){ ?>
