@@ -20,3 +20,13 @@ $opts = get_option('woo_opt');
 	    <?php endif; ?>
     <?php endforeach; ?>
 </div><!-- #woo_list_cat.col-md-12 -->
+<?php if(!empty($opts['blog_link_img']) && isset($opts['blog_link_img'])): ?>
+	<?php
+	$link = esc_url($opts['blog_link_url']);
+	$img = wp_get_attachment_image_src($opts['blog_link_img'],'full',false);
+	$img = $img[0];
+	?>
+	<a href="<?php echo $link; ?>">
+		<img class="woo-telefone" src="<?php echo $img; ?>">
+	</a>
+<?php endif; ?>

@@ -109,12 +109,24 @@ function options_techcd() {
 					 * Default input examples.
 					 */
 
-					// Text Field.
 					array(
 						'id'         => 'telefone_img', // Required
 						'label'      => __( 'Imagem do telefone', 'techcd-theme' ), // Required
 						'type'       => 'image', // Required
 						// 'default'  => 'Default text', // Optional
+					),
+					array(
+						'id'         => 'blog_link_img', // Required
+						'label'      => __( 'Imagem do blog', 'techcd-theme' ), // Required
+						'type'       => 'image', // Required
+						// 'default'  => 'Default text', // Optional
+					),
+					// Text Field.
+					array(
+						'id'         => 'blog_link_url', // Required
+						'label'      => __( 'Link para o blog', 'techcd-theme' ), // Required
+						'type'       => 'text', // Required
+						'default'  =>  home_url() . '/blog', // Optional
 					),
 				)
 			),

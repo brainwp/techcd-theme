@@ -45,6 +45,14 @@ class Woo_Orcamento{
     	if($pos !== false){
     		$translated_text = 'Crie uma conta preenchendo as informações abaixo. Se você já fez um orçamento conosco antes, faça o login no topo da página.';
     	}
+    	$pos = strpos($translated_text, 'Ver carrinho');
+    	if($pos !== false){
+    		$translated_text = 'Ver Orçamento';
+    	}
+    	$pos = strpos($translated_text, 'Detalhes da cobrança');
+    	if($pos !== false){
+    		$translated_text = 'Detalhes do Cadastro';
+    	}
     	return $translated_text;
     }
     public function remove_shipping($fields){

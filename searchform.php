@@ -11,6 +11,7 @@
 		<fieldset>
 			<input type="text" name="s" placeholder="Busca" class="input-text autoclear" />
 			<input type="submit" value="" class="input-submit" />
+			<input type="hidden" name="post_type" value="product" />
 		</fieldset>
 	</form>
 </div><!-- .col-md-2 busca_top -->
