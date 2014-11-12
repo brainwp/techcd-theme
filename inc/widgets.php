@@ -147,7 +147,61 @@ class Home_Widget extends WP_Widget {
 	<?php
 	}
 }
+class Image_Widget_Techcd extends WP_Widget {
+
+	public function __construct() {
+		$widget_ops = array('classname' => 'Image_Widget_Techcd', 'description' => 'Image Widget');
+		$control_ops = array('width' => 400, 'height' => 350);
+		parent::__construct('Image_Widget_Techcd','Widget de Imagem', $widget_ops, $control_ops);
+	}
+
+	public function widget( $args, $instance ) {
+
+
+		/**
+		 * Filter the content of the Text widget.
+		 *
+		 * @since 2.3.0
+		 *
+		 * @param string    $widget_text The widget content.
+		 * @param WP_Widget $instance    WP_Widget instance.
+		 */
+		$image = apply_filters( 'widget_home_image', empty( $instance['image'] ) ? '' : $instance['image'], $instance );
+		$link = apply_filters( 'widget_home_link', empty( $instance['link'] ) ? '' : $instance['link'], $instance );?>
+		<div class="col-md-4 home_widget">
+			<img src="<?php echo $image; ?>">
+			<div class="col-md-12 link">
+				<a href="<?php echo $link; ?>" class="read-more small float-left pull-left">Saiba mais</a>
+			</div><!-- .col-md-12 link -->
+		</div>
+		<?php
+	}
+
+	public function update( $new_instance, $old_instance ){
+		$instance = $old_instance;
+		$instance['link'] = $new_instance['link'];
+		$instance['image'] = $new_instance['image'];
+		if ( current_user_can('unfiltered_html') )
+			$instance['text'] =  $new_instance['text'];
+		else
+			$instance['text'] = stripslashes( wp_filter_post_kses( addslashes($new_instance['text']) ) ); // wp_filter_post_kses() expects slashed
+		return $instance;
+	}
+
+	public function form( $instance ) {
+		$instance = wp_parse_args( (array) $instance, array( 'link' => '', 'text' => '', 'image' => '') );
+		$link = strip_tags($instance['link']);
+		$image = strip_tags($instance['image']);
+		?>
+		<p><label for="<?php echo $this->get_field_id('link'); ?>"><?php echo 'Link:'; ?></label>
+			<input class="widefat" id="<?php echo $this->get_field_id('link'); ?>" name="<?php echo $this->get_field_name('link'); ?>" type="text" value="<?php echo esc_attr($link); ?>" /></p>
+		<p><label for="<?php echo $this->get_field_id('image'); ?>"><?php echo 'URL da imagem:'; ?></label>
+			<input class="widefat" id="<?php echo $this->get_field_id('image'); ?>" name="<?php echo $this->get_field_name('image'); ?>" type="text" value="<?php echo esc_attr($image); ?>" /></p>
+	<?php
+	}
+}
 function theme_register_widgets() {
+    register_widget( 'Image_Widget_Techcd' );
 	register_widget( 'Home_Widget' );
 	register_widget( 'Newsletter_Widget' );
 }

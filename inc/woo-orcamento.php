@@ -11,7 +11,7 @@ class Woo_Orcamento{
         add_action( 'woocommerce_single_product_summary', array($this,'remove_text'), 10 );
         add_filter( 'gettext', array($this,'gettext'), 20, 3 );
         add_filter('woocommerce_shipping_fields', array($this, 'remove_shipping'));
-
+        add_action('admin_init',array($this,'update_options'));
 	}
 	public function order($id,$posted){
 		$url = admin_url() . 'post.php?post='.$id.'&action=edit';
@@ -41,10 +41,26 @@ class Woo_Orcamento{
     	if($pos !== false){
     		$translated_text = str_replace('carrinho', 'orçamento', $translated_text);
     	}
+    	$pos = strpos($translated_text, 'Crie uma conta preenchendo as informações abaixo. Se você já comprou conosco antes, faça o login no topo da página.');
+    	if($pos !== false){
+    		$translated_text = 'Crie uma conta preenchendo as informações abaixo. Se você já fez um orçamento conosco antes, faça o login no topo da página.';
+    	}
     	return $translated_text;
     }
     public function remove_shipping($fields){
     	return array();
+    }
+    public function update_options(){
+    	$opts = get_option('woocommerce_new_order_settings');
+    	if($opts['enabled'] != 'no'){
+    		$opts['enabled'] = 'no';
+    		update_option( 'woocommerce_new_order_settings', $opts );
+    	}
+    	$opts = get_option('woocommerce_customer_processing_order_settings');
+    	if($opts['enabled'] != 'no'){
+    		$opts['enabled'] = 'no';
+    		update_option( 'woocommerce_customer_processing_order_settings', $opts );
+    	}
     }
 }
 new Woo_Orcamento();
