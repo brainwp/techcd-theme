@@ -12,9 +12,11 @@ $opts = get_option('woo_opt');
 <div class="col-md-12" id="woo_list_cat">
 	<?php $woo_cat = get_categories( array('taxonomy' => 'product_cat', 'hide_empty' => 0)  ); ?>
 	<?php foreach($woo_cat as $cat): ?>
-	     <?php $link = get_term_link($cat, 'product_cat'); ?>
-	     <a href="<?php echo esc_url($link); ?>">
-	     	<?php echo $cat->name; ?>
-	     </a>
+	     <?php if($cat->parent == 0): ?>
+	         <?php $link = get_term_link($cat, 'product_cat'); ?>
+	         <a href="<?php echo esc_url($link); ?>">
+	         	<?php echo $cat->name; ?>
+	         </a>
+	    <?php endif; ?>
     <?php endforeach; ?>
 </div><!-- #woo_list_cat.col-md-12 -->

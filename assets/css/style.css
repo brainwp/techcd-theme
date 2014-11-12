@@ -89,26 +89,26 @@ h1.page {
 .logo img{max-width: 220px;}
 
 /* top menu */
-#top-menu {padding:19px 0 0 0;}
-#top-menu ul {list-style:none;padding:0;margin:0;}
-#top-menu .main li, #top-menu .main li a, #top-menu .main li a .menu_span {display:block;float:left;cursor:pointer;}
-#top-menu .main li a .menu_span {font-size: 0.8em}
-#top-menu .main li a, #top-menu .main li a .menu_span {background:url(../images/top-menu-a.jpg) no-repeat 0 0;}
-#top-menu .main li {position:relative;padding-bottom:4px;padding-right: 10px;}
-#top-menu.float-left .main li {padding-right:10px;}
-#top-menu.float-right .main li {padding-left:10px;}
-#top-menu .main li a {background-position:top left;padding:0 0 0 20px;color:#656565;}
-#top-menu .main li a .menu_span {background-position:top right;height:25px;line-height:25px;text-align:center;padding:0 20px 0 0;font-family: 'Cabin', sans-serif;}
-#top-menu .main li a:hover {background-position:bottom left;}
-#top-menu .main li a:hover span, #top-menu .main li a.current span {background-position:bottom right;}
-#top-menu .main li a:hover, #top-menu .main li a.current {color:#85C226;background-position:bottom left;}
-#top-menu .main .current-dynamic > a {color:#5790dc;background-position:bottom left;}
-#top-menu .main .current-dynamic > a span {background-position:bottom right;}
-#top-menu .sub {background:url(../images/top-menu-sub.jpg) repeat-x #fafafa;position:absolute;top:27px;left:10px;padding:15px 20px 10px 20px;border:1px solid #e0e0e0;min-width:110px;display:none;z-index:50;}
-#top-menu.float-left .sub {left:0;}
-#top-menu .sub li, #top-menu .sub li a, #top-mnu .sub li a span {display:block;float:none;background:none;padding:0;}
-#top-menu.float-left .sub li, #top-menu.float-right .sub li {line-height:25px;padding:2px 0;}
-#top-menu .sub li a {font-family: 'Cabin', sans-serif;}
+.top-menu {padding:19px 0 0 0;}
+.top-menu ul {list-style:none;padding:0;margin:0;}
+.top-menu .main li, .top-menu .main li a, .top-menu .main li a .menu_span {display:block;float:left;cursor:pointer;}
+.top-menu .main li a .menu_span {font-size: 0.8em}
+.top-menu .main li a, .top-menu .main li a .menu_span {background:url(../images/top-menu-a.jpg) no-repeat 0 0;}
+.top-menu .main li {position:relative;padding-bottom:4px;padding-right: 10px;}
+.top-menu.float-left .main li {padding-right:10px;}
+.top-menu.float-right .main li {padding-left:10px;}
+.top-menu .main li a {background-position:top left;padding:0 0 0 20px;color:#656565;}
+.top-menu .main li a .menu_span {background-position:top right;height:25px;line-height:25px;text-align:center;padding:0 20px 0 0;font-family: 'Cabin', sans-serif;}
+.top-menu .main li a:hover {background-position:bottom left;}
+.top-menu .main li a:hover span, .top-menu .main li a.current span {background-position:bottom right;}
+.top-menu .main li a:hover, .top-menu .main li a.current {color:#85C226;background-position:bottom left;}
+.top-menu .main .current-dynamic > a {color:#5790dc;background-position:bottom left;}
+.top-menu .main .current-dynamic > a span {background-position:bottom right;}
+.top-menu .sub {background:url(../images/top-menu-sub.jpg) repeat-x #fafafa;position:absolute;top:27px;left:10px;padding:15px 20px 10px 20px;border:1px solid #e0e0e0;min-width:110px;display:none;z-index:50;}
+.top-menu.float-left .sub {left:0;}
+.top-menu .sub li, .top-menu .sub li a, #top-mnu .sub li a span {display:block;float:none;background:none;padding:0;}
+.top-menu.float-left .sub li, .top-menu.float-right .sub li {line-height:25px;padding:2px 0;}
+.top-menu .sub li a {font-family: 'Cabin', sans-serif;}
 /* -- */
 
 #login-box {position:absolute;top:0;right:0;background:url(../images/login.png) no-repeat top left;height:24px;line-height:24px;padding:0 0 0 27px;font-size:11px;color:#ededed;}
@@ -598,10 +598,10 @@ h1.page {
 #header{
 	margin-top: 20px;
 }
-#header #top-menu{
+#header .top-menu{
 	padding-left: 20px;
 }
-#top-menu .main li ul a .menu_span{
+.top-menu .main li ul a .menu_span{
 	background:transparent;
 }
 
@@ -677,13 +677,13 @@ article.type-page {
 	display:none;
 }
 /* styles for mobile */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .tinynav {
     	display: block;
     	margin-top:6px;
     	margin-right:10px;
     	}
-    #top-menu .main > ul { display: none }
+    .top-menu .main > ul { display: none }
     .clear-mob{
     	margin-top:20px;
     	display:block;
@@ -991,4 +991,28 @@ body.home .is_slider .slick-prev:before, body.home .is_slider .slick-dots button
 }
 #woo-content-cart .quantity.buttons_added{
 	display:none;
+}
+.woo-term-hide{
+	margin:0;
+}
+.woo-term-maislidos ul{
+	padding-left:10px;
+	padding-right:10px;
+	margin-top:5px;
+	list-style: none;
+}
+.woo-term-maislidos li{
+	display: inline-block;
+	margin-left:10px;
+}
+.woo-term-maislidos a{
+	font-family: 'Cabin', sans-serif;
+	color:black;
+	font-style: italic;
+	font-weight: 400;
+}
+.woo-term-maislidos{
+	font-family: 'Cabin', sans-serif;
+	background:url('../images/filters-bg.png') no-repeat;
+	min-width: 510px;
 }

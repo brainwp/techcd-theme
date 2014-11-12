@@ -9,6 +9,8 @@ class Woo_Orcamento{
         remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 10 );
         add_action( 'woocommerce_after_shop_loop_item_title', array($this,'remove_text'), 10 );
         add_action( 'woocommerce_single_product_summary', array($this,'remove_text'), 10 );
+        add_filter( 'gettext', array($this,'gettext'), 20, 3 );
+        add_filter('woocommerce_shipping_fields', array($this, 'remove_shipping'));
 
 	}
 	public function order($id,$posted){
@@ -24,12 +26,25 @@ class Woo_Orcamento{
     	return __('Adicionar ao carrinho','techcd-theme');
     }
     public function change_cart_text(){
-    	die('erro');
     	_e('<input type="submit" class="checkout-button button alt wc-forward" name="proceed" value="Finalizar Orçamento">','techcd-theme');
     	return false;
     }
     public function remove_text(){
     	echo '';
+    }
+    public function gettext($translated_text, $untranslated_text, $domain){
+    	$pos = strpos($translated_text, 'foi adicionado com sucesso ao seu carrinho.');
+    	if($pos !== false){
+    		$translated_text = str_replace('carrinho', 'orçamento', $translated_text);
+    	}
+    	$pos = strpos($translated_text, 'Atualizar carrinho');
+    	if($pos !== false){
+    		$translated_text = str_replace('carrinho', 'orçamento', $translated_text);
+    	}
+    	return $translated_text;
+    }
+    public function remove_shipping($fields){
+    	return array();
     }
 }
 new Woo_Orcamento();
