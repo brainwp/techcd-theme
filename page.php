@@ -26,6 +26,9 @@ get_header(); ?>
 			?>
 
 		</div><!-- #content -->
+
+		<div class="sombra"></div>
+
 	</div><!-- #primary -->
 <?php get_template_part('content','bottom'); ?>
 <?php

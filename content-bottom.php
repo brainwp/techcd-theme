@@ -14,7 +14,7 @@ $options_home = get_option('home_opt');
 	</div><!-- #marcas_home.col-md-5 -->
 <?php endif; ?>
 <?php if ( is_active_sidebar( 'newsletter_sidebar' ) ) : ?>
-	<div class="col-md-5 pull-right" id="newsletter">
+	<div class="col-md-6 pull-right" id="newsletter">
 		<?php dynamic_sidebar( 'newsletter_sidebar' ); ?>
 	</div><!-- #sidebar_newsletter.col-md-12 -->
 <?php endif; ?>

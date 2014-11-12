@@ -39,14 +39,15 @@ if ( 0 == $woocommerce_loop['loop'] % $woocommerce_loop['columns'] )
 	$classes[] = 'last';
 ?>
 <div <?php post_class( $classes ); ?>>
-	<?php
-	if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
-		the_post_thumbnail('medium');
-	}
-	else{
-		echo '<img src="'.get_bloginfo('template_url').'/assets/images/woo-default-th.png">';
-	}
-	?>
+	<div class="thumb">
+		<?php
+			if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
+				the_post_thumbnail('medium');
+			} else {
+				echo '<img src="'.get_bloginfo('template_url').'/assets/images/woo-default-th.png">';
+			}
+		?>
+	</div>
 	<a href="<?php the_permalink();?>" class="col-md-12 woo_infos">
 		<h3><?php the_title();?></h3>
 		<span><?php the_excerpt();?></span>
