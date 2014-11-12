@@ -1029,3 +1029,7 @@ body.home .is_slider .slick-prev:before, body.home .is_slider .slick-dots button
 	min-width: 510px;
 	margin-top: 3px;
 }
+
+.single .site-content {
+	padding-top: 0 !important;
+}

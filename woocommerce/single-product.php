@@ -16,7 +16,7 @@ get_header('shop'); ?>
 	<?php get_sidebar('woo'); ?>
 </div><!-- #sidebar-woo.col-md-2 -->
 <div class="col-md-12 clear-mob"></div>
-<div id="primary" class="col-md-8 pull-right">
+<div id="primary" class="col-md-8 pull-right single">
 	<div class="col-md-12 clear-mob"></div>
 	<div class="col-md-12" style="clear:both;height:20px;"></div>
 	<?php if(isset($_POST['add-to-cart'])){ ?>
