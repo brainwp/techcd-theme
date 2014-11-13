@@ -19,6 +19,7 @@
 if ( ! isset( $content_width ) ) {
 	$content_width = 600;
 }
+add_image_size( 'blog-th', 700, 207, true); // (blog)
 
 /**
  * Odin Classes.
