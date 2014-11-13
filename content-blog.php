@@ -14,9 +14,9 @@
                     <!-- list of blog posts - single post -->
                     <div class="list-blog-posts single">
                     	        <?php if(is_singular()): ?>
-                                  <h1>Lorem ipsum dolor sit</h1>
+                                  <h1><?php the_title(); ?></h1>
                                 <?php else: ?>
-                                  <h1><a href="<?php the_permalink();?>">Lorem ipsum dolor sit</a></h1>
+                                  <h1><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h1>
                                 <?php endif; ?>
                                 <div class="info-line">
                                 	<div>
