@@ -33,7 +33,7 @@
                                   <?php the_content(); ?>
                                 <?php else: ?>
                                   <?php the_excerpt(); ?>
-                                  <a href="<?php echo get_permalink($post_destacado->ID);?>" class="read-more small float-left">
+                                  <a href="<?php the_permalink(); ?>" class="read-more small float-left">
                                   	<?php _e('Leia Mais...','techcd-theme'); ?>
                                    </a>
                                 <?php endif; ?>
