@@ -1096,3 +1096,64 @@ article.type-post h1 a:hover{
 article.type-post{
 	margin-bottom: 30px;
 }
+article.type-post #comments h5{
+	margin-top:20px;
+	margin-bottom:20px;
+	font-size: 20px;
+	color: #1c1c1c;
+	font-family: HelveticaNeueMdCn, Helvetica, sans-serif;
+}
+article.type-post #comments ul li{
+	width:100%;
+    padding-left: 0;
+}
+article.type-post #comments .author{
+	position: relative;
+	float:left;
+}
+article.type-post .comments{
+	width:100%;
+}
+article.type-post #comments .children{
+	padding-left:20px;
+}
+article.type-post #comments h3{
+	font-size: 20px;
+	color: #1c1c1c;
+	font-family: HelveticaNeueMdCn, Helvetica, sans-serif;
+}
+article.type-post #comments form input{
+	border:none !important;
+	box-shadow: none !important
+}
+article.type-post #comments form .input-text{
+	width:auto;
+	max-width: 300px;
+    min-width: 300px;
+}
+article.type-post #comments form textarea{
+	background: url(../images/comments-li.jpg) repeat-x top left #f1f1f1;
+	padding: 20px;
+	position: relative;
+	margin: 0 0 5px 0;
+	border-top: 1px solid #c2c2c2;
+	border-left: 1px solid #c2c2c2;
+	border-right: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	box-shadow:none !important;
+}
+article.type-post #submit{
+background: url(../images/button-standard.png) no-repeat top left;
+background-size: cover;
+padding-left: 10px;
+padding-right: 10px;
+padding-top: 2px;
+height: 30px;
+line-height: 27px;
+display: inline-block;
+color: #656565;
+font-family: LucidaGrandeBold, Arial, sans-serif;
+font-size: 12px;
+text-align: center;
+cursor: pointer;
+}

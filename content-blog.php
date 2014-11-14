@@ -46,4 +46,10 @@
                                 </div></div>
                     </div>
                     <!-- //list of blog posts - single post -->
+                    <?php
+					// If comments are open or we have at least one comment, load up the comment template.
+					if ( is_singular() && comments_open() ) :
+						comments_template();
+					endif;
+					?>
 </article>
