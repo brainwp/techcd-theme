@@ -4,7 +4,19 @@ get_header(); ?>
 <?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
 	<header class="col-md-12 wooheader">
 		<div class="col-md-5 pull-left">
-			<h1 class="page-title"><?php _e('Blog','techcd-theme'); ?></h1>
+			<?php if(is_home() || is_singular()): ?>
+			  <h1 class="page-title"><?php _e('Blog','techcd-theme'); ?></h1>
+			<?php elseif(is_tag()): ?>
+		      <h1 class="page-title">
+				<?php _e('Tag: ','techcd-theme'); ?>
+				<?php echo single_tag_title( '', false ); ?>
+			  </h1>
+			 <?php elseif(is_category()): ?>
+			   <h1 class="page-title">
+				<?php _e('Categoria: ','techcd-theme'); ?>
+				<?php echo single_cat_title( '', false ); ?>
+			  </h1>
+			 <?php endif; ?>
 		</div><!-- .col-md-5 pull-left -->
 		<div class="woo-term-maislidos pull-right">
 			<?php do_action('woo_term_hide_mini_query'); ?>
