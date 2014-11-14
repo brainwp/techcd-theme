@@ -1157,7 +1157,7 @@ font-size: 12px;
 text-align: center;
 cursor: pointer;
 }
-#sidebar-blog .widget ul, body.single #sidebar-blog li.widget{
+#sidebar-blog .widget ul, #sidebar-blog li.widget{
 	list-style-type: none;
 	margin-top: -10px;
 }
