@@ -217,4 +217,11 @@ register_sidebar( array(
     'name'        => __( 'Newsletter sidebar', 'techcd-theme' ),
     //'description' => __( 'This sidebar is located above the age logo', 'techcd' )
 ) );
+ $args = array(
+	'name'          => __( 'Blog', 'techcd-theme' ),
+	'id'            => 'blog_sidebar',
+	'before_title'  => '<h5 class="widget-title">',
+	'after_title'   => '</h5>'
+	);
+register_sidebar($args);
 ?>

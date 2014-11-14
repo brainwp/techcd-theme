@@ -37,8 +37,8 @@ if ( ! function_exists( 'odin_comment_loop' ) ) {
                         <?php endif; ?>
                         <div class="pull-right">
                         	<?php comment_reply_link( array_merge( $args, array( 'reply_text' => __( 'Responder', 'techcd-theme' ), 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
-                        </div><!-- .col-md-12 pull-right -->
-                    </div><!-- .col-md-12 -->
+                        </div><!-- .pull-right -->
+                    </div><!-- .col-md-10 -->
 				<div class="clear-all" style="width:100%;clear:both;height:10px;"></div>
 				<?php break;
 		}
