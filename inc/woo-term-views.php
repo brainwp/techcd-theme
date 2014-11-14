@@ -48,6 +48,9 @@ class Woo_Term_Views{
 		if(is_product()){
 			global $wp_query;
 			$terms = get_the_terms($wp_query->post->ID,'product_cat');
+			if(empty($terms) || $terms == null || $terms == false )
+				return;
+
 			foreach($terms as $term){
 				$hide_post = get_page_by_title( $term->term_id, OBJECT, 'woo-term-hide' );
 				if($hide_post !== null){
