@@ -1211,3 +1211,6 @@ cursor: pointer;
 	display:block;
 	content:'';
 }
+.entry-content td{
+	border-top:1px solid transparent !important;
+}
