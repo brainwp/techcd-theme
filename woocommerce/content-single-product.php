@@ -12,7 +12,8 @@ if(!empty($slider) && isset($slider)){
 	foreach ($slider as $img) {
 		$img = wp_get_attachment_image_src( $img, 'brasa_slider_img', false );
 		$html .= '<div class="slick_slide">';
-		$html .= '<a href="#"><img src="'.$img[0].'" class="img_slider"></a>';
+		//$html .= '<a href="#"><img src="'.$img[0].'" class="img_slider"></a>';
+		$html .= '<img src="'.$img[0].'" class="img_slider">';
 		$html .= '</div>';
 	}
 	$html .= '</div>';

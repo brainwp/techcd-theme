@@ -938,9 +938,8 @@ table .product-total span, .woocommerce table.shop_table tfoot, table .product-t
 	padding:0;
 }
 #slider-woo-product img{
-	height:280px;
 	margin:0 auto;
-	width:100%;
+	width: auto;
 	padding:0;
 }
 #slider-woo-product .slick-next, body.home .is_slider .slick-next{
