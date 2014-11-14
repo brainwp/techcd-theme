@@ -30,7 +30,7 @@ if ( ! function_exists( 'odin_comment_loop' ) ) {
                     <div class="col-md-10">
                     	<?php $text = get_comment_text(); ?>
                     	<?php if(!empty($text)): ?>
-                    	   <div class="text curved shaded col-md-12">
+                    	   <div class="text curved shaded col-md-12 col-xs-9 col-sm-9 pull-right">
                               <span></span>
                               <?php echo $text; ?>
                            </div>
