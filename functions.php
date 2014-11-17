@@ -225,6 +225,7 @@ add_action( 'wp_enqueue_scripts', 'odin_enqueue_scripts', 1 );
 function woo_admin_scripts(){
     wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'admin-woo', get_template_directory_uri() . '/assets/js/admin-woo.js', array(), null, true );
+	wp_enqueue_style( 'admin-woo-css', get_template_directory_uri() . '/assets/css/admin-woo.css', array(), null, 'all' );
 }
 add_action( 'woocommerce_admin_css', 'woo_admin_scripts');
 

@@ -1,0 +1,5 @@
+.options_group.pricing,ul .shipping_tab,td.is_in_stock,th.is_in_stock,#price,td.price,th.column-price,
+th.column-is_in_stock,td.line_cost,th.line_cost,table.wc-order-totals,p.add-items,th.column-shipping_address,
+td.column-shipping_address,th.column-order_total,td.column-order_total{
+	display: none !important;
+}
