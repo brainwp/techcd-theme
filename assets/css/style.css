@@ -8,11 +8,9 @@ Description: Odin main stylesheet.
 @font-face {font-family: 'HelveticaNeueLtCnO';src: url('helveticaneueltcom-ltcno-webfont.eot');src: local('☺'), url('helveticaneueltcom-ltcno-webfont.woff') format('woff'), url('helveticaneueltcom-ltcno-webfont.ttf') format('truetype');font-weight: bold;font-style: normal;}
 a{
 	color:#85c226;
-	transition:100ms ease all;
 }
 a:hover{
 	color:rgba(133,194,38, 0.8);
-	transition:100ms ease all;
 }
 * {margin:0;padding:0;}
 html {height:100%;margin:0;padding:0;}
