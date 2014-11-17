@@ -17,11 +17,14 @@ $tag_count = sizeof( get_the_terms( $post->ID, 'product_tag' ) );
 <div class="product_meta">
 
 	<?php do_action( 'woocommerce_product_meta_start' ); ?>
-	<span class="posted_in col-md-12">
-		<?php _e('Disponibilidade: ','techcd-theme'); ?>
-		<?php echo get_post_meta($post->ID, 'woo_status_orcamento', true ); ?>
-	</span>
-	<div class="col-md-12 cart-separator"></div><!-- .col-md-12 cart-separator -->
+	<?php $stats = get_post_meta($post->ID, 'woo_status_orcamento', true ); ?>
+	<?php if(!empty($stats) || $stats != false || $stats != null): ?>
+	    <span class="posted_in col-md-12">
+		  <?php _e('Disponibilidade: ','techcd-theme'); ?>
+		  <?php echo $stats; ?>
+	    </span>
+	    <div class="col-md-12 cart-separator"></div><!-- .col-md-12 cart-separator -->
+	<?php endif; ?>
 	<?php if ( wc_product_sku_enabled() && ( $product->get_sku() || $product->is_type( 'variable' ) ) ) : ?>
 
 		<span class="sku_wrapper"><?php _e( 'SKU:', 'woocommerce' ); ?> <span class="sku" itemprop="sku"><?php echo ( $sku = $product->get_sku() ) ? $sku : __( 'N/A', 'woocommerce' ); ?></span>.</span>
