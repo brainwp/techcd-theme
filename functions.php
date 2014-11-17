@@ -228,7 +228,17 @@ function woo_admin_scripts(){
 	wp_enqueue_style( 'admin-woo-css', get_template_directory_uri() . '/assets/css/admin-woo.css', array(), null, 'all' );
 }
 add_action( 'woocommerce_admin_css', 'woo_admin_scripts');
-
+function custom_the_excerpt(){
+	global $post;
+	$chars = 150;
+	$string = get_the_content($post->ID);
+	if (strlen($string) > $chars) {
+       while (substr($string,$chars,1) <> ' ' && ($chars < strlen($string))){
+         $chars++;
+       }
+    }
+    echo substr($string,0,$chars) . ' [..]';
+}
 
 /*
  * Odin custom stylesheet URI.
@@ -293,3 +303,7 @@ require get_template_directory() . '/inc/woo-orcamento.php';
 require get_template_directory() . '/inc/woo-term-views.php';
 //woocommerce produtos mais acessados
 require get_template_directory() . '/inc/woo-products-views.php';
+//cpt faq
+require get_template_directory() . '/inc/cpt-faq.php';
+//cpt downloads
+require get_template_directory() . '/inc/cpt-downloads.php';

@@ -70,6 +70,28 @@ if(function_exists("register_field_group"))
 				'default_value' => '',
 				'layout' => 'vertical',
 			),
+			array (
+				'key' => 'field_546a2a0547322',
+				'label' => 'Arquivos relacionados',
+				'name' => 'downloads_rel',
+				'type' => 'relationship',
+				'instructions' => 'Selecione os downloads relacionados a esse produto',
+				'return_format' => 'object',
+				'post_type' => array (
+					0 => 'downloads',
+				),
+				'taxonomy' => array (
+					0 => 'all',
+				),
+				'filters' => array (
+					0 => 'search',
+				),
+				'result_elements' => array (
+					0 => 'post_type',
+					1 => 'post_title',
+				),
+				'max' => '',
+			),
 		),
 		'location' => array (
 			array (

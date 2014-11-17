@@ -1218,3 +1218,42 @@ cursor: pointer;
 .entry-content td{
 	border-top:1px solid transparent !important;
 }
+#help-faq .help-topic-content{
+	display:none;
+}
+#help-faq li a{
+	background: url(../images/arrow-green.png) no-repeat center left;
+	padding: 0 0 0 10px;
+	display: block;
+	color: #1d1d1d;
+}
+#help-faq{
+	transition:200ms ease all;
+}
+.thumbnail-download,.content-download{
+	padding:0;
+	margin-bottom: 20px;
+}
+#woo-content-downloads{
+	background:url('../images/add-to-cart-bg.png') center no-repeat;
+	background-size: cover;
+	min-height:200px;
+	height: auto;
+	clear:both;
+	margin-top:10px;
+}
+#woo-content-downloads .col-md-12{
+	padding:0;
+	margin:0;
+}
+#woo-content-downloads #download-ico{
+	background:url('../images/add-to-cart.png') center no-repeat;
+	height: 70px;
+	border: none !important;
+	box-shadow: none;
+	margin: 0;
+	width: 100%;
+}
+.woo_post_box_downloads, .woo_post_box_downloads .pull-right, .woo_post_box_downloads .pull-left, .woo_post_box_downloads img{
+	padding:0;
+}

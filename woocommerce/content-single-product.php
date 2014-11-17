@@ -27,3 +27,21 @@ if(!empty($slider) && isset($slider)){
 <div class="col-md-5 pull-right" id="woo-content-cart">
 	<?php do_action( 'woocommerce_single_product_summary' ); ?>
 </div><!-- #woo-content-cart.col-md-5 pull-right -->
+<?php $posts = get_post_meta( get_the_ID(), 'downloads_rel', true ); ?>
+<?php $max = count($posts); ?>
+<?php $i = 1; ?>
+<?php if( $posts ): ?>
+    <div class="col-md-5 pull-right" id="woo-content-downloads">
+    	<div class="col-md-12" id="download-ico"></div>
+    	<?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
+        <?php setup_postdata($post); ?>
+           <?php if($i != $max): ?>
+             <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>,
+           <?php else: ?>
+             <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+           <?php endif; ?>
+           <?php $i++; ?>
+        <?php endforeach; ?>
+    </div><!-- #woo-content-downloads.col-md-5 pull-right -->
+    <?php wp_reset_postdata(); ?>
+<?php endif; ?>

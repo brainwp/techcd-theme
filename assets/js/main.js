@@ -22,4 +22,15 @@ jQuery(document).ready(function($) {
     $("#top-menu .main > ul").tinyNav({
     	header: 'Menu', // String: Specify text for "header" and show header instead of the active item
     });
+    $('#help-faq a').on('click',function(e){
+    	var faq_id = $(this).attr('data-faq-id');
+    	if($(this).hasClass('open')){
+    		$('#faq-'+faq_id).fadeOut('fast');
+    		$(this).removeClass('open')
+    	}
+    	else{
+    		$('#faq-'+faq_id).fadeIn('fast');
+    	    $(this).addClass('open');
+    	}
+    });
 });
