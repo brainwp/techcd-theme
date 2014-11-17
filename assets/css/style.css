@@ -6,7 +6,14 @@ Description: Odin main stylesheet.
 @font-face {font-family: 'LucidaGrandeBold';src: url('lucida_grande_bold-webfont.eot');src: local('☺'), url('lucida_grande_bold-webfont.woff') format('woff'), url('lucida_grande_bold-webfont.ttf') format('truetype');font-weight: bold;font-style: normal;}
 @font-face {font-family: 'HelveticaNeueMdCn';src: url('helveticaneueltpro-mdcn-webfont.eot');src: local('☺'), url('helveticaneueltpro-mdcn-webfont.woff') format('woff'), url('helveticaneueltpro-mdcn-webfont.ttf') format('truetype');font-weight: bold;font-style: normal;}
 @font-face {font-family: 'HelveticaNeueLtCnO';src: url('helveticaneueltcom-ltcno-webfont.eot');src: local('☺'), url('helveticaneueltcom-ltcno-webfont.woff') format('woff'), url('helveticaneueltcom-ltcno-webfont.ttf') format('truetype');font-weight: bold;font-style: normal;}
-
+a{
+	color:#85c226;
+	transition:100ms ease all;
+}
+a:hover{
+	color:rgba(133,194,38, 0.8);
+	transition:100ms ease all;
+}
 * {margin:0;padding:0;}
 html {height:100%;margin:0;padding:0;}
 body {
@@ -740,9 +747,9 @@ article.type-page {
 }
 .slick-dots {
 	background: url('../images/sombra-slider.jpg') center center no-repeat transparent;
-	bottom: -27px !important;
+	bottom: -1px !important;
 	margin: 0 auto;
-	width: 95%;
+	width:100%;
 }
 .sombra {
 	background: url('../images/sombra-slider.jpg') center center no-repeat transparent;
