@@ -283,8 +283,8 @@ h1.page {
 .comments ul li {position:relative;padding:0px 0 0 80px;display:block;float:left;width:620px;}
 .comments ul li ul li {width:540px;padding-bottom:20px;}
 .comments ul li .author {position:absolute;top:0;left:0;}
-.comments ul li .author div {color:#5790dc;}
-.comments ul li a {color:#5790dc;}
+.comments ul li .author div {color:#85c226;}
+.comments ul li a {color:#85c226;}
 .comments ul li .text {background:url(../images/comments-li.jpg) repeat-x top left #f1f1f1;padding:20px;position:relative;margin:0 0 5px 0;}
 .comments ul li .text span {background:url(../images/comments-text-span.jpg) no-repeat top left;width:12px;height:16px;display:block;position:absolute;top:30px;left:-12px;}
 

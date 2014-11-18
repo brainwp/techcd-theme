@@ -53,7 +53,7 @@
 			comment_form(
 				array(
 					'comment_notes_after' => '',
-					'comment_field' => '<div class="comment-form-comment form-group"><label class="control-label" for="comment">' . __( 'Comment', 'techcd-theme' ) . '</label><div class="controls"><textarea id="comment" name="comment" cols="45" rows="8" class="form-control" aria-required="true"></textarea></div></div>',
+					'comment_field' => '<div class="comment-form-comment form-group" id="respond"><label class="control-label" for="comment">' . __( 'Comment', 'techcd-theme' ) . '</label><div class="controls"><textarea id="comment" name="comment" cols="45" rows="8" class="form-control" aria-required="true"></textarea></div></div>',
 					'fields' => apply_filters( 'comment_form_default_fields',
 						array(
 							'author' => '<div class="comment-form-author form-group">' . '<label class="control-label" for="author">' . __( 'Name', 'techcd-theme' ) . ( $req ? '<span class="required"> *</span>' : '' ) . '</label><input class="form-control input-text" id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . ' /></div>',
