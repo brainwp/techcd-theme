@@ -1273,3 +1273,6 @@ cursor: pointer;
     width:auto !important;
     padding:5px !important;
 }
+body.hide-menu-cart nav#top-menu li.is-woocart{
+	display:none;
+}

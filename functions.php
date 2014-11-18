@@ -20,6 +20,10 @@ if ( ! isset( $content_width ) ) {
 	$content_width = 600;
 }
 add_image_size( 'blog-th', 700, 207, true); // (blog)
+/**
+ * Custom template tags.
+ */
+require_once get_template_directory() . '/inc/template-tags.php';
 
 /**
  * Odin Classes.
@@ -169,6 +173,16 @@ function odin_widgets_init() {
 
 add_action( 'widgets_init', 'odin_widgets_init' );
 
+function add_body_cart_class($classes) {
+	global $woocommerce;
+	if ( sizeof( $woocommerce->cart->cart_contents ) == 0 ) {
+		$classes[] = 'hide-menu-cart';
+	}
+	return $classes;
+}
+
+add_filter('body_class','add_body_cart_class');
+
 /**
  * Flush Rewrite Rules for new CPTs and Taxonomies.
  *
@@ -281,10 +295,6 @@ require_once get_template_directory() . '/inc/optimize.php';
  */
 require_once get_template_directory() . '/inc/plugins-support.php';
 
-/**
- * Custom template tags.
- */
-require_once get_template_directory() . '/inc/template-tags.php';
 
 require_once get_template_directory() . '/inc/options.php';
 //class post destacado

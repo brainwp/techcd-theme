@@ -58,6 +58,11 @@ class Odin_Bootstrap_Nav_Walker extends Walker_Nav_Menu {
 
 			$classes = empty( $item->classes ) ? array() : (array) $item->classes;
 			$classes[] = 'menu-item-' . $item->ID;
+			$pos = strpos($item->title,'Orçamento');
+			if ( $pos !== false ) {
+				$classes[] = 'is-woocart';
+			}
+
 
 			$class_names = join( ' ', apply_filters( 'nav_menu_css_class', array_filter( $classes ), $item, $args ) );
 
