@@ -39,6 +39,7 @@ if ( 0 == $woocommerce_loop['loop'] % $woocommerce_loop['columns'] )
 	$classes[] = 'last';
 ?>
 <div <?php post_class( $classes ); ?>>
+	<div class="woo_each">
 	<div class="thumb">
 		<?php
 			if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
@@ -51,6 +52,9 @@ if ( 0 == $woocommerce_loop['loop'] % $woocommerce_loop['columns'] )
 	<a href="<?php the_permalink();?>" class="col-md-12 woo_infos">
 		<h3><?php the_title();?></h3>
 		<span><?php the_excerpt();?></span>
-		<span class="mais_detalhes"></span>
 	</a><!-- .col-md-12 woo_infos -->
+	<div class="bottom">
+		<a href="<?php the_permalink();?>" class="mais_detalhes"></a>
+	</div>
+</div><!-- woo_each -->
 </div>
