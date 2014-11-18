@@ -53,6 +53,10 @@ class Woo_Orcamento{
     	if($pos !== false){
     		$translated_text = 'Detalhes do Cadastro';
     	}
+    	$pos = strpos($translated_text, 'Seu carrinho está vazio.');
+    	if($pos !== false){
+    		$translated_text = 'Seu orçamento está vazio.';
+    	}
     	return $translated_text;
     }
     public function remove_shipping($fields){
