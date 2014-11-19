@@ -73,6 +73,49 @@ class Woo_Orcamento{
     		$opts['enabled'] = 'no';
     		update_option( 'woocommerce_customer_processing_order_settings', $opts );
     	}
+		if(is_admin() && isset($_GET['activated']) && $_GET['activated'] == true){
+			$page = get_page_by_path(__('orcamento','techcd-theme'));
+			if($page == null){
+				$args = array(
+					'post_title' => __('Orçamento','techcd-theme'),
+					'post_type' => 'page',
+				    'post_status' => 'publish',
+				    'post_name'   => __('orcamento','techcd-theme'),
+				    'post_content' => '[woocommerce_cart]'
+					);
+				$id = wp_insert_post( $args, false );
+				if($id != 0){
+					update_option( 'woocommerce_cart_page_id', $id );
+				}
+			}
+			$page = get_page_by_path(__('finalizar-orcamento','techcd-theme'));
+			if($page == null){
+				$args = array(
+					'post_title' => __('Finalizar Orçamento','techcd-theme'),
+					'post_type' => 'page',
+				    'post_status' => 'publish',
+				    'post_name'   => __('finalizar-orcamento','techcd-theme'),
+				    'post_content' => '[woocommerce_checkout]'
+					);
+				$id = wp_insert_post( $args, false );
+				if($id != 0){
+					update_option( 'woocommerce_checkout_page_id', $id );
+				}
+			}
+			$page = get_page_by_path(__('vitrine','techcd-theme'));
+			if($page == null){
+				$args = array(
+					'post_title' => __('Vitrine','techcd-theme'),
+					'post_type' => 'page',
+				    'post_status' => 'publish',
+				    'post_name'   => __('vitrine','techcd-theme'),
+					);
+				$id = wp_insert_post( $args, false );
+				if($id != 0){
+					update_option( 'woocommerce_shop_page_id', $id );
+				}
+			}
+		}
     }
 }
 new Woo_Orcamento();
