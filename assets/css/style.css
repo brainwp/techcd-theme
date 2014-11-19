@@ -1314,6 +1314,26 @@ cursor: pointer;
 .woo_post_box_downloads, .woo_post_box_downloads .pull-right, .woo_post_box_downloads .pull-left, .woo_post_box_downloads img{
 	padding:0;
 }
+
+.post-type-archive-downloads .thumb {
+	margin-top: 10px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #C2C2C2 #FFF #FFF #C2C2C2;
+	position: relative;
+	display: block;
+	border-radius: 5px;
+	padding: 15px;
+}
+
+.post-type-archive-downloads .resumo {
+	padding: 10px 20px;
+}
+.post-type-archive-downloads .download-bt {
+	background: url('../images/icon-download.png') center center no-repeat transparent;
+	height: 50px;
+	text-indent: -99999px;
+}
 .woocommerce .woocommerce-message:before, .woocommerce .woocommerce-error:before, .woocommerce .woocommerce-info:before, .woocommerce-page .woocommerce-message:before, .woocommerce-page .woocommerce-error:before, .woocommerce-page .woocommerce-info:before{
 	height:2.4em !important;
 }
@@ -1322,6 +1342,18 @@ cursor: pointer;
 }
 .woocommerce .woocommerce-info:before, .woocommerce-page .woocommerce-info:before {
     background:#85c226 !important;
+}
+
+.post-type-archive-downloads .type-downloads span {
+	color: #7F7F7F;
+	font-size: 0.9em;
+	line-height: 17px;
+}
+
+.post-type-archive-downloads .type-downloads {
+	border-bottom: 1px solid #666;
+	margin-bottom: 20px;
+	padding: 10px 10px 20px 10px;
 }
 
 body.hide-menu-cart nav#top-menu li.is-woocart{

@@ -15,11 +15,12 @@ $classes[] = 'woo_post_box_downloads';
 			}
 		?>
 	</div>
-	<a href="<?php the_permalink();?>" class="col-md-5 pull-left">
+	<div class="col-md-8 pull-left resumo">
 		<h4><?php the_title();?></h4>
-		<span><?php custom_the_excerpt();?></span>
-	</a><!-- .col-md-12 woo_infos -->
-	<a href="<?php the_permalink();?>" class="col-md-3 pull-right download-bt">
+		<span><?php the_content();?></span>
+	</div><!-- .col-md-8 resumo -->
+	<?php $file = get_field('downloads_file'); ?>
+	<a href="<?php echo $file;?>" target="_blank" class="col-md-1 pull-right download-bt">
 		<?php _e('Baixar','techcd-theme'); ?>
 	</a><!-- .col-md-12 woo_infos -->
 </div>
