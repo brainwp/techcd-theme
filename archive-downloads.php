@@ -4,8 +4,9 @@ get_header('shop'); ?>
 <?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
 	<header class="col-md-12 wooheader">
 		<div class="col-md-5 pull-left">
-			<h1 class="page-title"><?php woocommerce_page_title(); ?></h1>
+			<h1 class="page-title"><?php _e('Downloads','techcd-theme'); ?></h1>
 		</div><!-- .col-md-5 pull-left -->
+		<div class="col-md-12 clear-mob"></div>
 		<div class="woo-term-maislidos pull-right">
 			<?php do_action('woo_term_hide_mini_query'); ?>
 		</div><!-- .pull-right -->
