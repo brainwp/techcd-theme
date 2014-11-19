@@ -103,7 +103,7 @@ class Woo_Term_Views{
 		if ( $query->have_posts() ) {
 			$html = '<div class="woo-term-hide">';
 			$html .= '<ul>';
-			$html .= __('<span>Mais acessados: </span>','techcd-theme');
+			$html .= __('<span>Itens mais acessados: </span>','techcd-theme');
 			while ( $query->have_posts() ) {
 				$query->the_post();
 				$term = get_term_by( 'id', get_the_title(), 'product_cat' );
