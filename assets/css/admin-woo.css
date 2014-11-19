@@ -3,3 +3,6 @@ th.column-is_in_stock,td.line_cost,th.line_cost,table.wc-order-totals,p.add-item
 td.column-shipping_address,th.column-order_total,td.column-order_total,body.post-type-faq #edit-slug-box{
 	display: none !important;
 }
+#acf_sub_title{
+	display:none;
+}

@@ -1,4 +1,4 @@
-<div class="col-md-4 home_widget content-servicos">
+<a href="<?php the_permalink(); ?>" class="col-md-4 home_widget content-servicos">
 	<div class="col-md-12 clear-mob"></div>
 	<?php the_post_thumbnail('medium'); ?>
 	<div class="col-md-12 titulo <?php echo get_post_meta( get_the_ID(), 'servicos_icone', true ); ?>">
@@ -19,4 +19,4 @@
   <?php endwhile;
        endif; ?>
 	</div><!-- .itens-servicos -->
-</div>
+</a>

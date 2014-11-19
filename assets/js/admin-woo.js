@@ -16,4 +16,16 @@ jQuery(document).ready(function($) {
 	$('td.column-shipping_address').css('display','none');
 	$('th.column-order_total').css('display','none');
 	$('td.column-order_total').css('display','none');
+	if($('input[name=post_destacado]:checked').val() == 'true'){
+		$('#acf_sub_title').css('display','block');
+	}
+	$('input[name=post_destacado]').on('click',function(){
+		if($('input[name=post_destacado]:checked').val() == 'true'){
+			$('#acf_sub_title').css('display','block');
+	    }
+	    else{
+	    	$('#acf_sub_title').css('display','none');
+	    }
+	})
+
 });
