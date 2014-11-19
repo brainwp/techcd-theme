@@ -22,7 +22,7 @@ function cpt_servicos() {
 	$args = array(
 		'label'               => __( 'servicos', 'techcd-theme' ),
 		'description'         => __( 'Serviços', 'techcd-theme' ),
-		'supports'            => array( 'title', 'editor', 'thumbnail' ),
+		'supports'            => array( 'title', 'editor', 'thumbnail', 'excerpt' ),
 		'labels'              => $labels,
 		'hierarchical'        => false,
 		'public'              => true,

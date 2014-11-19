@@ -5,7 +5,7 @@
 		<span class="item"><?php the_title(); ?></span>
 	</div>
 	<div class="col-md-12 text">
-		<?php echo the_content(); ?>
+		<?php the_excerpt(); ?>
 	</div><!-- .col-md-12 text -->
 	<div class="col-md-12 clear-mob"></div>
 	<div class="itens-servicos">
