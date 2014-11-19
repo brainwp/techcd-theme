@@ -11,6 +11,7 @@ $opts = get_option('woo_opt');
 <?php endif; ?>
 
 <div class="col-md-12" id="woo_list_cat">
+    <?php if(!is_singular('servicos')): ?>
 	<?php $woo_cat = get_categories( array('taxonomy' => 'product_cat', 'hide_empty' => 0)  ); ?>
 	<?php foreach($woo_cat as $cat): ?>
 	     <?php if($cat->parent == 0): ?>
@@ -20,6 +21,7 @@ $opts = get_option('woo_opt');
 	         </a>
 	    <?php endif; ?>
     <?php endforeach; ?>
+   <?php endif; ?>
 </div><!-- #woo_list_cat.col-md-12 -->
 <?php if(!empty($opts['blog_link_img']) && isset($opts['blog_link_img'])): ?>
 	<?php
