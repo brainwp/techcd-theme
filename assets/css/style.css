@@ -837,6 +837,7 @@ header.wooheader{
 	margin-top: 30px;
 	background: url('../images/bg-header.jpg');
 	padding:10px 30px;
+	clear:both;
 }
 header.wooheader h1{
 	color: #1c1c1c;
@@ -1292,4 +1293,20 @@ body.hide-menu-cart nav#top-menu li.is-woocart{
 }
 .woocommerce th.product-quantity{
 	text-align: center !important;
+}
+@media screen and (max-width: 600px) {
+	header.wooheader .woo-term-maislidos{
+		margin-top:20px;
+		background: #ffffff;
+		background: -moz-linear-gradient(top,  #ffffff 0%, #e5e5e5 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #ffffff 0%,#e5e5e5 100%); /* W3C */
+		border-radius:18px;
+		-webkit-box-shadow: 1px 2px 2px 0px rgba(50, 50, 50, 0.50);
+		-moz-box-shadow:    1px 2px 2px 0px rgba(50, 50, 50, 0.50);
+		box-shadow:         1px 2px 2px 0px rgba(50, 50, 50, 0.50);
+	}
 }
