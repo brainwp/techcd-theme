@@ -799,6 +799,16 @@ article.type-page {
 #sidebar_home .monitor{
 	background:url('../images/ico1.jpg') right 16px no-repeat;
 }
+#sidebar_home .lapis{
+	background:url('../images/ico4.jpg') right 16px no-repeat;
+}
+#sidebar_home .musica{
+	background:url('../images/ico5.jpg') right 16px no-repeat;
+}
+#sidebar_home .raio{
+	background:url('../images/ico6.jpg') right 16px no-repeat;
+}
+
 #marcas_home {
 	padding: 0 15px 20px 30px;
 }
@@ -1116,7 +1126,7 @@ border-top: 1px solid #fcfcfc;
 height: 30px;
 line-height: 30px;
 }
-article.type-post .thumb img{
+article.type-post .thumb img, .content-servicos img{
 	border-top: 1px solid #c2c2c2;
 border-left: 1px solid #c2c2c2;
 border-right: 1px solid #fff;
@@ -1341,4 +1351,15 @@ body.hide-menu-cart nav#top-menu li.is-woocart{
 		width:100%;
 		min-width: auto;
 	}
+}
+.content-servicos .itens-servicos span{
+	display: inline-block;
+	clear: both;
+	margin-top:5px;
+	min-width:20px;
+	min-height: 20px;
+	background:url('../images/list-checked.png') left no-repeat;
+	padding-left:20px;
+	color: #7F7F7F;
+	font-size: 0.7em;
 }

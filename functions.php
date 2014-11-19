@@ -317,3 +317,5 @@ require get_template_directory() . '/inc/woo-products-views.php';
 require get_template_directory() . '/inc/cpt-faq.php';
 //cpt downloads
 require get_template_directory() . '/inc/cpt-downloads.php';
+//cpt serviços
+require get_template_directory() . '/inc/cpt-servicos.php';

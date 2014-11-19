@@ -44,4 +44,4 @@ class Post_Destacado {
 		}
 	}
 }
-new Post_Destacado(array('post','page','products'));
+new Post_Destacado(array('post','page','products','downloads'));
