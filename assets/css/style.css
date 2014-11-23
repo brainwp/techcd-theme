@@ -1278,6 +1278,10 @@ cursor: pointer;
 #help-faq .help-topic-content{
 	display:none;
 }
+#help-faq .help-topic-content p {
+	color: #555;
+	font-size: 0.9em;
+}
 #help-faq li a{
 	background: url(../images/arrow-green.png) no-repeat center left;
 	padding: 0 0 0 10px;
@@ -1285,7 +1289,15 @@ cursor: pointer;
 	color: #1d1d1d;
 }
 #help-faq{
+	margin-top: 20px;
+	overflow: hidden;
 	transition:200ms ease all;
+}
+#help-faq li {
+	border-bottom: 1px solid #85C226;
+	padding-bottom: 10px;
+	padding-left: 0;
+	margin-bottom: 10px;
 }
 .thumbnail-download,.content-download{
 	padding:0;
