@@ -717,6 +717,9 @@ article.type-page {
     #bottom{
     	background-size:cover !important;
     }
+    #primary{
+    	float:left !important;
+    }
 }
 #post_destacado{
 	padding-top:15px;

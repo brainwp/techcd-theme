@@ -33,4 +33,7 @@ jQuery(document).ready(function($) {
     	    $(this).addClass('open');
     	}
     });
+    var string_css = '<style id="img_slider_size">.is_slider .img_slider{max-width:'+$(window).width() +'px !important}</style>';
+    $('body.single').append(string_css);
+    console.log(string_css);
 });

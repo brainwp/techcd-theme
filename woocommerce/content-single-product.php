@@ -20,28 +20,30 @@ if(!empty($slider) && isset($slider)){
     echo $html;
 }
 ?>
+<div class="col-md-12 clear-mob"></div><!-- .col-md-12 clear-mob -->
 <div class="col-md-6 pull-left" id="woo-content-single">
 	<h3><?php _e('Descrição do Produto','techcd-theme'); ?></h3>
 	<?php the_content(); ?>
 </div><!-- #woo-content-single.col-md-9 pull-left -->
+<div class="col-md-12 clear-mob"></div><!-- .col-md-12 clear-mob -->
 <div class="col-md-5 pull-right" id="woo-content-cart">
 	<?php do_action( 'woocommerce_single_product_summary' ); ?>
 </div><!-- #woo-content-cart.col-md-5 pull-right -->
+<div class="col-md-12 clear-mob"></div><!-- .col-md-12 clear-mob -->
 <?php $posts = get_post_meta( get_the_ID(), 'downloads_rel', true ); ?>
 <?php $max = count($posts); ?>
 <?php $i = 1; ?>
 <?php if( $posts ): ?>
     <div class="col-md-5 pull-right" id="woo-content-downloads">
     	<div class="col-md-12" id="download-ico"></div>
-    	<?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
-        <?php setup_postdata($post); ?>
+    	<?php foreach( $posts as $post_id): // variable must be called $post (IMPORTANT) ?>
            <?php if($i != $max): ?>
-             <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>,
+             <a href="<?php echo get_the_permalink($post_id); ?>"><?php echo get_the_title($post_id); ?></a>,
            <?php else: ?>
-             <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+             <a href="<?php echo get_the_permalink($post_id); ?>"><?php echo get_the_title($post_id); ?></a>
            <?php endif; ?>
            <?php $i++; ?>
         <?php endforeach; ?>
     </div><!-- #woo-content-downloads.col-md-5 pull-right -->
-    <?php wp_reset_postdata(); ?>
 <?php endif; ?>
+<div class="col-md-12 clear-mob"></div><!-- .col-md-12 clear-mob -->

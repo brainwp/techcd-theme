@@ -27,7 +27,7 @@ get_header('shop'); ?>
         <div class="col-md-12" style="clear:both;height:20px;"></div>
 	<?php } ?>
 	&nbsp;
-	<div id="content" class="site-content" role="main">
+	<div id="content" class="site-content col-md-12" role="main">
 		<?php
 				// Start the Loop.
 		while ( have_posts() ) : the_post();
