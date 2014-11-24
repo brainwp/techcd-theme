@@ -31,19 +31,14 @@ if(!empty($slider) && isset($slider)){
 </div><!-- #woo-content-cart.col-md-5 pull-right -->
 <div class="col-md-12 clear-mob"></div><!-- .col-md-12 clear-mob -->
 <?php $posts = get_post_meta( get_the_ID(), 'downloads_rel', true ); ?>
-<?php $max = count($posts); ?>
-<?php $i = 1; ?>
 <?php if( $posts ): ?>
-    <div class="col-md-5 pull-right" id="woo-content-downloads">
+    <div class="col-md-5 content-servicos pull-right" id="woo-content-downloads">
     	<div class="col-md-12" id="download-ico"></div>
-    	<?php foreach( $posts as $post_id): // variable must be called $post (IMPORTANT) ?>
-           <?php if($i != $max): ?>
-             <a href="<?php echo get_the_permalink($post_id); ?>"><?php echo get_the_title($post_id); ?></a>,
-           <?php else: ?>
-             <a href="<?php echo get_the_permalink($post_id); ?>"><?php echo get_the_title($post_id); ?></a>
-           <?php endif; ?>
-           <?php $i++; ?>
-        <?php endforeach; ?>
+    	<div class="col-md-12 itens-servicos">
+    		<?php foreach( $posts as $post_id): // variable must be called $post (IMPORTANT) ?>
+    		    <a class="col-md-12" href="<?php echo get_the_permalink($post_id); ?>"><?php echo get_the_title($post_id); ?></a>
+            <?php endforeach; ?>
+        </div><!-- .col-md-12 itens-servicos -->
     </div><!-- #woo-content-downloads.col-md-5 pull-right -->
 <?php endif; ?>
 <div class="col-md-12 clear-mob"></div><!-- .col-md-12 clear-mob -->

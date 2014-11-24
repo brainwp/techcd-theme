@@ -1407,7 +1407,7 @@ body.hide-menu-cart nav#top-menu li.is-woocart{
 		min-width: auto;
 	}
 }
-.content-servicos .itens-servicos span{
+.content-servicos .itens-servicos span, .content-servicos .itens-servicos a{
 	display: inline-block;
 	clear: both;
 	margin-top:5px;
@@ -1416,7 +1416,12 @@ body.hide-menu-cart nav#top-menu li.is-woocart{
 	background:url('../images/list-checked.png') left no-repeat;
 	padding-left:20px;
 	color: #7F7F7F;
-	font-size: 0.7em;
+	font-size: 0.9em;
+}
+.content-servicos .itens-servicos a{
+	width:100%;
+	display:block;
+    padding-left:20px !important;
 }
 .contato .wpcf7-form input[type='text'],
 .contato .wpcf7-form input[type='email'],
@@ -1428,4 +1433,3 @@ body.hide-menu-cart nav#top-menu li.is-woocart{
 	padding: 8px 10px;
 	width: 90%;
 }
-#
