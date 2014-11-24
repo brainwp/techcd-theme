@@ -628,7 +628,7 @@ h1.page {
 }
 
 .slick-slider {
-	margin-top: 15px;
+	margin-top: 30px;
 	padding: 0;
 }
 
@@ -961,7 +961,7 @@ img.woo-telefone{
 	padding: 10px;
 }
 #content .woo_post_box .woo_infos span{
-	color:#bababa;
+	color:#888;
 	font-size: 0.8em;
 	font-style: italic;
 	margin-bottom: 10px;
@@ -1001,11 +1001,15 @@ table .product-total span, .woocommerce table.shop_table tfoot, table .product-t
 	margin:0 auto;
 	width:100%;
 	padding:0;
+	text-align: center;
+	background-color: #f1f1f1;
 }
 #slider-woo-product img{
 	margin:0 auto;
 	width: auto;
 	padding:0;
+	float: none !important;
+	display: block;
 }
 #slider-woo-product .slick-next, body.home .is_slider .slick-next{
 	background: url(../images/rotator-prev-next.png) no-repeat top left;
@@ -1108,7 +1112,7 @@ body.home .is_slider .slick-prev:before, body.home .is_slider .slick-dots button
 }
 
 .single .slick-prev, .single .slick-next {
-	top: 42%;
+	top: 37%;
 }
 #sidebar-blog{
 	padding-left:40px;
