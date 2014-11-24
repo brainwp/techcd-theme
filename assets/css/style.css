@@ -720,6 +720,9 @@ article.type-page {
     #primary{
     	float:left !important;
     }
+    #slider-woo-product div{
+    	height:auto !important;
+    }
 }
 #post_destacado{
 	padding-top:15px;
