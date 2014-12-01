@@ -36,7 +36,11 @@ if(!empty($slider) && isset($slider)){
     	<div class="col-md-12" id="download-ico"></div>
     	<div class="col-md-12 itens-servicos">
     		<?php foreach( $posts as $post_id): // variable must be called $post (IMPORTANT) ?>
-    		    <a class="col-md-12" href="<?php echo get_the_permalink($post_id); ?>"><?php echo get_the_title($post_id); ?></a>
+    		    <?php $link = get_the_permalink($post_id); ?>
+    		    <?php $title = get_the_title($post_id); ?>
+    		    <?php if($link !== false && $title !== false): ?>
+    		        <a class="col-md-12" href="<?php echo $link; ?>"><?php echo $title; ?></a>
+    		    <?php endif; ?>
             <?php endforeach; ?>
         </div><!-- .col-md-12 itens-servicos -->
     </div><!-- #woo-content-downloads.col-md-5 pull-right -->

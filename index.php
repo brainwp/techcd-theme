@@ -31,11 +31,11 @@ get_header(); ?>
 <?php endif; ?>
 <div class="col-md-12 clear-mob"></div>
 <?php get_template_part('content','pagination'); ?>
-<div class="col-md-4" id="sidebar-blog">
+<div class="col-md-4 pull-right" id="sidebar-blog">
 	<?php get_sidebar('blog'); ?>
 </div><!-- #sidebar-woo.col-md-2 -->
 <div class="col-md-12 clear-mob"></div>
-<div id="primary" class="col-md-8 pull-right">
+<div id="primary" class="col-md-8 pull-left">
 	<div class="col-md-12 clear-mob"></div>
 	<div id="content" class="site-content" role="main">
 		<?php
