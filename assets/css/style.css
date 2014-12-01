@@ -723,6 +723,9 @@ article.type-page {
     #slider-woo-product div{
     	height:auto !important;
     }
+    #woo-content-downloads{
+    	clear:both;
+    }
 }
 #post_destacado{
 	padding-top:15px;
@@ -1319,7 +1322,6 @@ cursor: pointer;
 	background-size: cover;
 	min-height:200px;
 	height: auto;
-	clear:both;
 	margin-top:10px;
 }
 #woo-content-downloads .col-md-12{
