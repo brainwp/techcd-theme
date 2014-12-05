@@ -293,8 +293,8 @@ msgstr "Próxima imagem &rarr;"
 # @ odin
 #: ../search.php:17
 #, php-format
-msgid "Search Results for: %s"
-msgstr "Resultado de Busca por: %s"
+msgid "Results for: %s"
+msgstr "Resultados para: %s"
 
 # @ odin
 #: ../tag.php:21
@@ -338,7 +338,7 @@ msgstr "%sTag: %s%s"
 #: ../core/helpers.php:332
 #, php-format
 msgid "%sSearch result for: &quot;%s&quot;%s"
-msgstr "%sResultado da busca para: &quot;%s&quot;%s"
+msgstr "%sResultado para: &quot;%s&quot;%s"
 
 # @ odin
 #: ../core/helpers.php:339

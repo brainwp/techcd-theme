@@ -57,6 +57,10 @@ class Woo_Orcamento{
     	if($pos !== false){
     		$translated_text = 'Seu orçamento está vazio.';
     	}
+    	$pos = strpos($translated_text, 'Resultados da pesquisa por:');
+    	if($pos !== false){
+    		$translated_text = str_replace('Resultados da pesquisa por:', 'Resultados para:', $translated_text);
+    	}
     	return $translated_text;
     }
     public function remove_shipping($fields){
