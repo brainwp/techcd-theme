@@ -24,12 +24,15 @@ jQuery(document).ready(function($) {
     });
     $('#help-faq a').on('click',function(e){
     	var faq_id = $(this).attr('data-faq-id');
+    	var faq_open = $('#help-faq a.open').attr('data-faq-id');
     	if($(this).hasClass('open')){
-    		$('#faq-'+faq_id).fadeOut('fast');
+    		$('#faq-'+faq_id).fadeOut('slow');
     		$(this).removeClass('open')
     	}
     	else{
-    		$('#faq-'+faq_id).fadeIn('fast');
+    		$('#faq-'+faq_open).fadeOut('slow');
+    		$('#help-faq a.open').removeClass('open');
+    		$('#faq-'+faq_id).fadeIn('slow');
     	    $(this).addClass('open');
     	}
     });
