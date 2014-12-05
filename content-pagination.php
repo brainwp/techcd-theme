@@ -1,9 +1,11 @@
 <?php
 // pagination file
+global $pagination_float;
 ?>
 <div class="col-md-12 clear-mob"></div>
 <div class="col-md-12 woo_pagination">
-	<div class="pagination float-right pull-right">
+
+	<div class="pagination <?php echo $pagination_float; ?>">
 		<?php
 		global $wp_query;
 

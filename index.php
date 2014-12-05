@@ -21,6 +21,10 @@ get_header(); ?>
 				<?php _e('Arquivo: ','techcd-theme'); ?>
 				<?php echo get_the_date('d/m/Y'); ?>
 			  </h1>
+			  <?php elseif(is_search()): ?>
+		      <h1 class="page-title">
+		      	<?php echo sprintf(_x('Resultados para: "%s"','techcd-theme'),get_search_query()); ?>
+			  </h1>
 			 <?php endif; ?>
 		</div><!-- .col-md-5 pull-left -->
 	    <div class="col-md-12 clear-mob"></div>
