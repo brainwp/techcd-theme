@@ -277,4 +277,41 @@ if(function_exists("register_field_group"))
 		'menu_order' => 0,
 	));
 }
+if(function_exists("register_field_group"))
+{
+	register_field_group(array (
+		'id' => 'acf_servicos',
+		'title' => 'Servicos',
+		'fields' => array (
+			array (
+				'key' => 'field_5481fcaebd645',
+				'label' => 'Cabeçalho de Serviços',
+				'name' => 'thumb_servicos',
+				'type' => 'image',
+				'save_format' => 'url',
+				'preview_size' => 'large',
+				'library' => 'all',
+			),
+		),
+		'location' => array (
+			array (
+				array (
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => 'servicos',
+					'order_no' => 0,
+					'group_no' => 0,
+				),
+			),
+		),
+		'options' => array (
+			'position' => 'side',
+			'layout' => 'default',
+			'hide_on_screen' => array (
+			),
+		),
+		'menu_order' => 15,
+	));
+}
+
 ?>

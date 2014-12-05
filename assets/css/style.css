@@ -1429,6 +1429,14 @@ body.hide-menu-cart nav#top-menu li.is-woocart{
 	display:block;
     padding-left:20px !important;
 }
+.thumbnail-servicos {
+	margin-bottom: 20px;
+	margin-top: 20px;
+	padding: 0;
+}
+.thumbnail-servicos img{
+	border-radius: 3px;
+}
 .contato .wpcf7-form input[type='text'],
 .contato .wpcf7-form input[type='email'],
 .contato .wpcf7-form input,
