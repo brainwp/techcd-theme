@@ -98,6 +98,57 @@ if(function_exists("register_field_group"))
 				),
 				'max' => '',
 			),
+			array (
+				'key' => 'field_5481f94d7a989',
+				'label' => 'Código do produto',
+				'name' => 'id_produto',
+				'type' => 'text',
+				'instructions' => 'Classificação numérica do produto (ID)',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_5481fa7edd99b',
+				'label' => 'Faixa de valores',
+				'name' => 'faixa_de_valores_produto',
+				'type' => 'repeater',
+				'sub_fields' => array (
+					array (
+						'key' => 'field_5481fa9add99c',
+						'label' => 'Quantidade',
+						'name' => 'quantidade_faixa_val_prod',
+						'type' => 'text',
+						'column_width' => 50,
+						'default_value' => '',
+						'placeholder' => '',
+						'prepend' => '',
+						'append' => '',
+						'formatting' => 'html',
+						'maxlength' => '',
+					),
+					array (
+						'key' => 'field_5481fae8dd99d',
+						'label' => 'Valor',
+						'name' => 'valor_faixa_val_prod',
+						'type' => 'text',
+						'column_width' => 50,
+						'default_value' => '',
+						'placeholder' => '',
+						'prepend' => '',
+						'append' => '',
+						'formatting' => 'html',
+						'maxlength' => '',
+					),
+				),
+				'row_min' => 0,
+				'row_limit' => '',
+				'layout' => 'table',
+				'button_label' => 'Adicionar Faixa',
+			),
 		),
 		'location' => array (
 			array (
@@ -226,4 +277,41 @@ if(function_exists("register_field_group"))
 		'menu_order' => 0,
 	));
 }
+if(function_exists("register_field_group"))
+{
+	register_field_group(array (
+		'id' => 'acf_servicos',
+		'title' => 'Servicos',
+		'fields' => array (
+			array (
+				'key' => 'field_5481fcaebd645',
+				'label' => 'Cabeçalho de Serviços',
+				'name' => 'thumb_servicos',
+				'type' => 'image',
+				'save_format' => 'url',
+				'preview_size' => 'large',
+				'library' => 'all',
+			),
+		),
+		'location' => array (
+			array (
+				array (
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => 'servicos',
+					'order_no' => 0,
+					'group_no' => 0,
+				),
+			),
+		),
+		'options' => array (
+			'position' => 'side',
+			'layout' => 'default',
+			'hide_on_screen' => array (
+			),
+		),
+		'menu_order' => 15,
+	));
+}
+
 ?>

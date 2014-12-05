@@ -16,7 +16,7 @@ get_header();
 ?>
 <div class="col-md-12" style="height:20px"></div>
 <?php
-	echo do_shortcode( '[brasa_slider name="Primeiro Slider de Exemplo"]' );
+	echo do_shortcode( '[brasa_slider name="Slider Home"]' );
 ?>
 
 <?php
