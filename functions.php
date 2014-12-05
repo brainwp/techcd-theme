@@ -56,7 +56,6 @@ if ( ! function_exists( 'odin_setup_features' ) ) {
 	 * @return void
 	 */
 	function odin_setup_features() {
-
 		/**
 		 * Add support for multiple languages.
 		 */
@@ -70,8 +69,10 @@ if ( ! function_exists( 'odin_setup_features' ) ) {
 				'main-menu' => __( 'Main Menu', 'techcd-theme' )
 			)
 		);
+		add_theme_support( 'woocommerce' );
 
 		/*
+
 		 * Add post_thumbnails suport.
 		 */
 		add_theme_support( 'post-thumbnails' );
