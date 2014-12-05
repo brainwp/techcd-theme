@@ -119,6 +119,16 @@ class Woo_Orcamento{
 					update_option( 'woocommerce_shop_page_id', $id );
 				}
 			}
+		    $page = get_page_by_title( 'Slider Home', OBJECT, 'brasa_slider_cpt' );
+			if($page == null){
+				$args = array(
+					'post_title' => __('Slider Home','techcd-theme'),
+					'post_type' => 'brasa_slider_cpt',
+				    'post_status' => 'publish',
+				    'post_name'   => __('slider_home','techcd-theme'),
+					);
+				wp_insert_post( $args, false );
+			}
 		}
     }
 }
