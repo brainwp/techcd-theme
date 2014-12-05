@@ -23,7 +23,7 @@ get_header(); ?>
 			  </h1>
 			  <?php elseif(is_search()): ?>
 		      <h1 class="page-title">
-		      	<?php echo sprintf(_x('Resultados para: "%s"','techcd-theme'),get_search_query()); ?>
+		      	<?php echo sprintf(__('Resultados para: "%s"','techcd-theme'),get_search_query()); ?>
 			  </h1>
 			 <?php endif; ?>
 		</div><!-- .col-md-5 pull-left -->
