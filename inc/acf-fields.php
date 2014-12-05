@@ -98,6 +98,19 @@ if(function_exists("register_field_group"))
 				),
 				'max' => '',
 			),
+			array (
+				'key' => 'field_5481f94d7a989',
+				'label' => 'Código do produto',
+				'name' => 'id_produto',
+				'type' => 'text',
+				'instructions' => 'Classificação numérica do produto (ID)',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
 		),
 		'location' => array (
 			array (
