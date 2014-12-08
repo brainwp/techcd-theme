@@ -1451,3 +1451,8 @@ body.hide-menu-cart nav#top-menu li.is-woocart{
 	padding: 8px 10px;
 	width: 90%;
 }
+@media screen and (max-width: 1200px) {
+	#header .top-menu {
+		padding-left: 0;
+	}
+}
