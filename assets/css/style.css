@@ -1413,6 +1413,10 @@ body.hide-menu-cart nav#top-menu li.is-woocart{
 		min-width: auto;
 	}
 }
+.post-type-archive-servicos .clear {
+	margin: 15px auto;
+	overflow: hidden;
+}
 .content-servicos .itens-servicos span, .content-servicos .itens-servicos a{
 	display: inline-block;
 	clear: both;
