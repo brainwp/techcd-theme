@@ -30,11 +30,18 @@ get_header(); ?>
 <div class="col-md-12" style="height:20px"></div>
 <div id="sidebar_home" class="site-content col-md-12" role="main">
 	<?php
+	$c_serv = 0;
 	// Start the Loop.
 	while ( have_posts() ) : the_post();
 
 		// Include the page content template.
 		get_template_part( 'content','servicos');
+		$c_serv++;
+
+		if ($c_serv == 3) {
+			echo "<div class='clear'></div>";
+			$c_serv = 0;
+		}
 
 	endwhile;
 	?>
