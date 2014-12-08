@@ -8,11 +8,11 @@
 	<?php endif; ?>
 </div><!-- .col-md-11 thumbnail-servicos -->
 
-<div class="col-md-11 content-download">
+<div class="col-md-8 content-download">
 	<?php the_content(); ?>
 </div>
 
-<div class="col-md-11 content-servicos">
+<div class="col-md-4 content-servicos">
 	<div class="itens-servicos">
 		<?php if( have_rows('servicos_itens') ):
 	    // loop through the rows of data

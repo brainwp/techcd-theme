@@ -1447,3 +1447,20 @@ body.hide-menu-cart nav#top-menu li.is-woocart{
 	padding: 8px 10px;
 	width: 90%;
 }
+
+.single-servicos .wpcf7-form {
+	overflow: hidden;
+	margin: 25px auto 15px !important;;
+}
+
+.single-servicos .wpcf7-form p {
+	padding: 0 !important;
+}
+
+.single-servicos .wpcf7-form input, .single-servicos .wpcf7-form textarea {
+	width: 100%;
+	background-color: #E1E1E1;
+	padding: 5px;
+	border-radius: 5px;
+	margin: 10px auto 0;
+}
