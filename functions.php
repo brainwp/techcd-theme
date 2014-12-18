@@ -320,3 +320,5 @@ require get_template_directory() . '/inc/cpt-faq.php';
 require get_template_directory() . '/inc/cpt-downloads.php';
 //cpt serviços
 require get_template_directory() . '/inc/cpt-servicos.php';
+//campos antigos
+require get_template_directory() . '/inc/campos-antigos.php';
