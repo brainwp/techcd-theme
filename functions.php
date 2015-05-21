@@ -270,7 +270,20 @@ function odin_stylesheet_uri( $uri, $dir ) {
 }
 
 add_filter( 'stylesheet_uri', 'odin_stylesheet_uri', 10, 2 );
+/**
+ * set editor cap
+ */
+function brasa_set_editor_cap(){
+	// gets the editor role
+    $role = get_role( 'author' );
+    if(!is_object($role))
+    	return;
 
+    // This only works, because it accesses the class instance.
+    // would allow the author to edit others' posts for current theme only
+    $role->add_cap( 'edit_theme_options' );
+}
+add_action( 'admin_init', 'brasa_set_editor_cap');
 /**
  * Core Helpers.
  */

@@ -4,7 +4,7 @@ function options_techcd() {
 	$settings = new Odin_Theme_Options(
 		'techcd-options', // Slug/ID of the Settings Page (Required)
 		'Opções do tema', // Settings page name (Required)
-		'manage_options' // Page capability (Optional) [default is manage_options]
+		'edit_theme_options' // Page capability (Optional) [default is manage_options]
 	);
 
 	$settings->set_tabs(
