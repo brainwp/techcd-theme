@@ -275,7 +275,7 @@ add_filter( 'stylesheet_uri', 'odin_stylesheet_uri', 10, 2 );
  */
 function brasa_set_editor_cap(){
 	// gets the editor role
-    $role = get_role( 'author' );
+    $role = get_role( 'editor' );
     if(!is_object($role))
     	return;
 
