@@ -282,8 +282,17 @@ function brasa_set_editor_cap(){
     // This only works, because it accesses the class instance.
     // would allow the author to edit others' posts for current theme only
     $role->add_cap( 'edit_theme_options' );
+    $role->remove_cap( 'manage_options' );
+
 }
 add_action( 'admin_init', 'brasa_set_editor_cap');
+function brasa_set_editor_cap_theme_options($cap){
+	return 'edit_theme_options';
+}
+add_filter( 'option_page_capability_home_opt', 'brasa_set_editor_cap_theme_options');
+add_filter( 'option_page_capability_footer', 'brasa_set_editor_cap_theme_options');
+add_filter( 'option_page_capability_woo_opt', 'brasa_set_editor_cap_theme_options');
+
 /**
  * Core Helpers.
  */
