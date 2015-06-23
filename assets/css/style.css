@@ -37,7 +37,7 @@ body {
 }
 img{border:0;}
 a, a:hover{text-decoration:none;outline:none;}
-h1,h2,h3,h4,h5,h6 {padding:0;margin:0;font-weight:normal;}
+h1,h2,h3,h4,h5,h6 {padding:0;margin:0;font-weight:normal;font-family: "Cabin",sans-serif;}
 p {line-height:17px;}
 #content p {
 	padding: 10px 0;
@@ -998,6 +998,10 @@ table .product-total span, .woocommerce table.shop_table tfoot, table .product-t
 }
 .prev-post-reveal-nav,.next-post-reveal-nav{
 	display:none;
+}
+.woo-single-title h1 {
+	font-family: "Cabin",sans-serif;
+	font-size: 2em;
 }
 #slider-woo-product div{
 	height:280px;
