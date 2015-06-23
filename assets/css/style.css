@@ -860,8 +860,8 @@ header.wooheader{
 }
 header.wooheader h1{
 	color: #1c1c1c;
-	font-size: 1.8em;
-	margin-top: 5px;
+	font-size: 1.6em;
+	margin-top: 7px;
 }
 img.woo-telefone{
 	width:100%;
@@ -1083,6 +1083,7 @@ body.home .is_slider .slick-prev:before, body.home .is_slider .slick-dots button
 	margin:0;
 }
 .woo-term-maislidos ul{
+	font-size: 0.9em;
 	padding-left: 20px;
 	padding-right: 10px;
 	margin-top: 5px;
@@ -1103,11 +1104,13 @@ body.home .is_slider .slick-prev:before, body.home .is_slider .slick-dots button
 	color: #85c226;
 }
 
-.woo-term-maislidos{
+.woo-term-maislidos {
 	font-family: 'Cabin', sans-serif;
 	background:url('../images/filters-bg.png') no-repeat;
+	height: 35px;
 	min-width: 510px;
 	margin-top: 3px;
+	overflow: hidden;
 }
 
 .single .site-content {

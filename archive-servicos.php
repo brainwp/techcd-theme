@@ -22,7 +22,7 @@ get_header(); ?>
 			<h1 class="page-title"><?php _e('Serviços','techcd-theme'); ?></h1>
 		</div><!-- .col-md-5 pull-left -->
 		<div class="col-md-12 clear-mob"></div>
-		<div class="woo-term-maislidos pull-right">
+		<div class="col-md-7 woo-term-maislidos pull-right">
 			<?php do_action('woo_term_hide_mini_query'); ?>
 		</div><!-- .pull-right -->
 </header><!-- .wooheader -->
