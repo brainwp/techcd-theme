@@ -1,4 +1,5 @@
 <?php
+global $wp_query;
 $opts = get_option('woo_opt');
 ?>
 
@@ -15,8 +16,16 @@ $opts = get_option('woo_opt');
 	<?php $woo_cat = get_categories( array('taxonomy' => 'product_cat', 'hide_empty' => 0)  ); ?>
 	<?php foreach($woo_cat as $cat): ?>
 	     <?php if($cat->parent == 0): ?>
+	         <?php $class = '';?>
 	         <?php $link = get_term_link($cat, 'product_cat'); ?>
-	         <a href="<?php echo esc_url($link); ?>">
+	         <?php if(is_single()):?>
+	            <?php global $wp_query;?>
+	            <?php if(has_term($cat->term_id, 'product_cat', $wp_query->post->ID)) $class = 'active';?>
+	         <?php endif;?>
+	         <?php if(is_tax('product_cat')):?>
+	             <?php if($wp_query->query_vars['product_cat'] == $cat->slug) $class = 'active'; ?>
+	         <?php endif;?>
+	         <a href="<?php echo esc_url($link); ?>" class="<?php echo $class;?>">
 	         	<?php echo $cat->name; ?>
 	         </a>
 	    <?php endif; ?>
