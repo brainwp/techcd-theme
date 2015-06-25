@@ -20,6 +20,7 @@ if ( ! isset( $content_width ) ) {
 	$content_width = 600;
 }
 add_image_size( 'blog-th', 700, 207, true); // (blog)
+add_image_size( 'marca', 165, 65, array( 'center', 'center' ));
 /**
  * Custom template tags.
  */
@@ -342,3 +343,5 @@ require get_template_directory() . '/inc/cpt-faq.php';
 require get_template_directory() . '/inc/cpt-downloads.php';
 //cpt serviços
 require get_template_directory() . '/inc/cpt-servicos.php';
+//cpt marcas
+require get_template_directory() . '/inc/cpt-marcas.php';
