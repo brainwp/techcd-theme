@@ -362,7 +362,7 @@ h1.page {
 /* -- */
 
 /* bottom & footer */
-#bottom {background:url(../images/bg-bottom.jpg) top left;margin:0 auto;color:#1d1d1d;}
+#bottom {background:url('../images/bg-bottom.jpg') no-repeat center top #929292;margin:0 auto;color:#1d1d1d;}
 #bottom h5 {padding:10px 0 10px 0;font-size:18px;}
 #bottom p {padding:0 0 10px 0;}
 #bottom .inner {padding:20px 30px;}
@@ -370,9 +370,9 @@ h1.page {
 #bottom .list li {line-height:22px;}
 #bottom .list li a {color:#1d1d1d;}
 #bottom .contact {position:relative;height:69px;width:200px;display:block;}
-#bottom .contact span {background:url(../images/type-icons.png) no-repeat 0 0;height:26px;width:24px;display:block;position:absolute;bottom:0px;right:0px;z-index:20;}
+#bottom .contact span {background:url('../images/type-icons.png') no-repeat 0 0;height:26px;width:24px;display:block;position:absolute;bottom:0px;right:0px;z-index:20;}
 #bottom .contact:hover span {background-position:0 -26px;}
-#footer {background:url(../images/bg-footer.jpg) top left;height:35px;margin:0 auto;line-height:35px;}
+#footer {background:url('../images/bg-footer.jpg') top left;height:35px;margin:0 auto;line-height:35px;}
 #footer p {line-height:35px;color:#1d1d1d;}
 #footer p.float-left, #footer ul.float-left {padding-left:10px;}
 #footer p.float-right {padding-right:10px;}
@@ -688,6 +688,7 @@ article.type-page {
 #bottom .mapa_footer img {
 	border: 1px solid #868686;
 	border-radius: 3px;
+	max-width: 100%;
 }
 #footer{
 	border:none;
@@ -1408,6 +1409,13 @@ body.hide-menu-cart nav#top-menu li.is-woocart{
 .woocommerce th.product-quantity{
 	text-align: center !important;
 }
+@media (max-width: 800px) {
+	#bottom .mapa_footer {
+		float: none !important;
+		margin: 20px auto !important;
+	}
+}
+
 @media screen and (max-width: 600px) {
 	header.wooheader .woo-term-maislidos{
 		margin-top:20px;
